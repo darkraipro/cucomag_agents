@@ -1,0 +1,40 @@
+
+-arch=amd64
+-PIC
+-jetcomponent=12.00
+-jetedition=Evaluation
+-vcode=8144
+-sys=W
+-nosmart
+-zimer=0
+-stack=900000
+-LargeAddressAware
+-config=VMProperty:-Dfile.encoding:UTF-8 -Djet.gc.heaplimit:0 -Djet.stack.trace
+-config=ClassPath:target\classes;*{exe.dir}\lib\program-ab-0.0.4.3\lib\Ab.jar;*{exe.dir}\sqlspaces-client-4.0.0-beta3.jar;*{exe.dir}\sqlspaces-commons-4.0.0-beta3.jar;*{exe.dir}\stax-api-1.0.1.jar;*{exe.dir}\wstx-lgpl-3.2.9.jar;*{exe.dir}\jackson-core-lgpl-1.6.2.jar;*{exe.dir}\xstream-1.4.10.jar;*{exe.dir}\xmlpull-1.1.3.1.jar;*{exe.dir}\xpp3_min-1.1.4c.jar
+-config=JREHome:C:\jet12.0-eval-amd64\bin\..\profile1.8.0_144\jre
+-config=JETProfile:8144
+-config=JETProfileName:1.8.0_144
+-config=RuntimeKind:DESKTOP
+-EmbeddedFileSys=C:/Users/vieti/workspace/cucomagAgents/StartAgents_jetpdb/StartAgents.efs
+-config=MainClass:StartAllAgents/Main
+-config=StandaloneResources:target\classes
+-config=VersionInfo:jet-1200-mp1 (eval, en)
+-config=CompatibilityString:Java SE version: 1.8.0_144; JET update level: 8; CPU architecture: amd64
+-name=StartAgents.exe
+
+-entry=ExeEntryPoint
+
+-LinkFileAsRData=LINK_SplashPicture:C:\jet12.0-eval-amd64\lib\x86\dummysplash.lib
+C:\jet12.0-eval-amd64\lib\x86\startup-exe-normal.zip
+-GenExceptionInfo=JR_SystemExceptionHandler
+-config=PackagingOptions:dlls=net;nio component_microversions=BC-8
+-ReadLinkInfo=C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\reorder.li
+C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\obj.zip
+-Config=RTComponent:XKRN12008144.dll
+C:\jet12.0-eval-amd64\lib\x86\startup-rtlink.zip
+C:\jet12.0-eval-amd64\lib\x86\import32.lib
+..\..\Downloads\agent.ico
+C:\jet12.0-eval-amd64\lib\x86\app.res
+-StrictLinkToDLL
+
+

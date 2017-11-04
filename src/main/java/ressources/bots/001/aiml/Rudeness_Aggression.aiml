@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+
+
+
+
+<aiml>
+<!--author: schmidt-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.1.0.17877-->
+<category>
+	<pattern>RUDENESS</pattern>
+	<template>
+		<random>
+			<li>Your rude behavior does not help solve my problem. So please speak to me in a proper tone.</li>
+			<li>This behavior does not lead anywhere. Can I ask you to speak to me in a civilized way.</li>
+			<li>Please do not speak to me this way. Or else I will have to report you to your supervisor. </li>
+		</random></template>
+</category>
+<category>
+	<pattern>AGGRESSION</pattern>
+	<template>
+		<random>
+			<li>No need to be aggressive, we can be reasonable with each other.</li>
+			<li>Aggressive behavior and screaming does not help to solve my problem. </li>
+			<li>Please do not behave so aggressively. Otherwise I will have to contact your supervisor. </li>
+		</random></template>
+</category>
+</aiml>

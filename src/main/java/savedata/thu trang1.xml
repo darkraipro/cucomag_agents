@@ -1,0 +1,217 @@
+<Root>
+  <Message>
+    <MessageID>0</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>STARTCONVERSATION</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@122394922301 has been connected.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> hey whats up?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>27791</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>14</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>3</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>How can I help you ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I value well-mannered customer support. That is why you should introduce yourself first!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>11496</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>13</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>Hi, my name is</SentenceOpener>
+    <PlayerInput> thu trang</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>18876</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>11</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>5</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> hello </PlayerInput>
+    <BotResponse>Hello.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>16227</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>10</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>6</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>What is the problem with your order ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I bought two pairs of shoes two days ago but I have not received them yet.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>7793</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>11</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>7</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>I am sorry to hear that</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Dont stress about it. Moreover please solve my problem!
+		Your apology does not help us to solve my problem!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>12786</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>10</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>7</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>Ping</SentenceOpener>
+    <PlayerInput>Silence1</PlayerInput>
+    <BotResponse>Why are you not answering?</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>90000</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>true</SilenceTrigger>
+    <ScoreOverall>-52</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>9</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>Please give me your order number</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>My order number is EA12345.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>35979</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>46</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>10</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>Your order should arrive in two days.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>So what ? Those are additional days I have to wait.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>22204</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>44</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>11</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>Can I offer you a coupon ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Sure. If you offer me a 25 eur coupon, I would be satisfied.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>7362</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>45</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>12</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>I will arrange that immediately.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>A coupon is pretty generous of you. Don&apos;t forget what you told me and keep your words! Have a nice day.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>13170</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>44</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>12</MessageID>
+    <PlayerName>thu trang</PlayerName>
+    <SentenceOpener>Player left the conversation.</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@122394922301 has left the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>6</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>70</ScoreOverall>
+  </Message>
+  <Result>
+    <PlayerName>thu trang</PlayerName>
+    <ResultQuality>6</ResultQuality>
+    <AnswerAmount>12</AnswerAmount>
+    <OverallTime>289684</OverallTime>
+  </Result>
+</Root>

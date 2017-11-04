@@ -1,0 +1,100 @@
+0,TARGET BOTSTART,*,*,This is the greeting of a GaitoBot conversation.,Scenario_not_received.aiml
+0,HI,*,*,<condition name="introduced" value="true">#Newline		<random>#Newline			<li>?!</li>#Newline			<li>!?</li>#Newline		</random></condition><condition name="introduced" value="false"><think><set name="introduced">true</set></think>#Newline		<random>#Newline			<li>Hi.</li>#Newline			<li>Good day.</li>#Newline			<li>Hello.</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,STARTCONVERSATION,*,*,<think><set name="introduced">false</set><set name="information">false</set><set name="problemdescription">false</set><set name="solution">false</set><set name="costreason">false</set><set name="serialnumber">false</set><set name="customername">false</set><set name="counter">0</set></think>Customer@1239402 has entered the chat.,Scenario_not_received.aiml
+0,HOW CAN I HELP YOU,*,*,<condition name="problemdescription" value="true">#Newline		<random>#Newline			<li>Pretty sure I told you my problem just a moment before#Comma but here again: my phone has been broken. I need your service to replace them.</li>#Newline			<li>My problem is just as I said: The glass on the surface of my phone is broken. I need your service to replace them</li>#Newline		</random></condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>My phone has been broken. I need your service to replace them.</li>#Newline			<li>The glass on the surface of my phone is broken. I need your service to replace them.</li>#Newline		</random><think><set name="problemdescription">true</set></think></condition>,Scenario_not_received.aiml
+0,WHEN PHONE,*,*,<condition name="information" value="true">#Newline		<random>#Newline			<li>?!</li>#Newline			<li>!?</li>#Newline		</random></condition><condition name="information" value="false"><think><set name="information">true</set></think>#Newline		<random>#Newline			<li>Roughly 3 years ago I bought the phone at your store.</li>#Newline			<li>I think I have the phone for 3 years now.</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,SERIAL NUMBER,*,*,<condition name="serialnumber" value="true">#Newline		<random>#Newline			<li>As I said the phones number is 47057.</li>#Newline			<li>47057</li>#Newline		</random></condition><condition name="serialnumber" value="false">#Newline		<random>#Newline			<li>Let me see... it is 47057.</li>#Newline			<li>I believe it is 47057... yeah it is.</li>#Newline		</random><think><set name="serialnumber">true</set></think></condition>,Scenario_not_received.aiml
+0,REFUND,*,*,<condition name="problemdescription" value="true">A refund would be nice :)</condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>Analyze the situation first#Comma before you rush to a solution. A tip for a newbie customer support.</li>#Newline			<li>I recommend you to assess the situation first before you offer a solution. Just my 2 cents.</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,REPLACE PHONE OK,*,*,<condition name="solution" value="true">#Newline		<random>#Newline			<li>?!</li>#Newline			<li>!?</li>#Newline		</random></condition><condition name="solution" value="false"><condition name="problemdescription" value="true"><think><set name="solution">true</set></think>Ye thats great then. :)</condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>Analyze the situation first#Comma before you rush to a solution. A tip for a newbie customer support.</li>#Newline			<li>I recommend you to assess the situation first before you offer a solution. Just my 2 cents.</li>#Newline		</random></condition></condition>,Scenario_not_received.aiml
+0,PAY 200 EUR,*,*,<condition name="problemdescription" value="true">#Newline		<random>#Newline			<li>Why can you not repair it for free ? Any other competitor would have done so without a blink! I am a life long customer of your company! I bought each product you made and got all generations of your smart phones before#Comma starting with UPhone 1 to UPhone 8 P+!! Now you are telling me that for being such a loyal customer you can not repair the phone for free ??</li>#Newline			<li>Do you know how much money I spent on your products ?! I ordered the latest generation of UPhones 6 months prior those came out. I even took a plane from Hamburg to Duesseldorf in order to buy it on the first day of its release in Oberhausen! And here you are telling me now#Comma that I can not have a repair for free ?!</li>#Newline		</random></condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>Wait that is bad support if you are not aware of my situation first. That is made up out of thin air.</li>#Newline			<li>What you just said makes no sense considering it came out of nowhere.</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,GUARANTEE EXPIRED,*,*,<condition name="costreason" value="true">#Newline		<random>#Newline			<li>?!</li>#Newline			<li>!?</li>#Newline		</random></condition><condition name="costreason" value="false"><think><set name="costreason">true</set></think>You can surely make an exception for a long time customer.</condition>,Scenario_not_received.aiml
+0,NO,*,*,<condition name="costreason" value="true"><condition name="counter" value="1"><srai>THERE IS NOTHING I CAN DO</srai></condition><condition name="counter" value="0"><condition name="problemdescription" value="true"><think><set name="counter">1</set></think>#Newline		<random>#Newline			<li>Can you really not make an exception#Comma please ? :(</li>#Newline		</random></condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>What are you babbling about?!</li>#Newline		</random></condition></condition></condition><condition name="costreason" value="false"><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>What are you babbling about?!</li>#Newline		</random></condition><condition name="problemdescription" value="true">#Newline		<random>#Newline			<li>Why not ?!?!</li>#Newline		</random></condition></condition>,Scenario_not_received.aiml
+0,THERE IS NOTHING I CAN DO,*,*,<condition name="problemdescription" value="true">#Newline		<random>#Newline			<li>Fine#Comma I will never buy a product of your company again. Good riddance.</li>#Newline			<li>Ok today your competitor have a new customer. Cya.</li>#Newline		</random></condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>?!</li>#Newline			<li>!?</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,REPAIR FOR FREE,*,*,<condition name="solution" value="true">#Newline		<random>#Newline			<li>?!</li>#Newline			<li>!?</li>#Newline		</random></condition><condition name="solution" value="false"><condition name="problemdescription" value="true"><think><set name="solution">true</set></think>Ye thats great then. :)</condition><condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>Analyze the situation first#Comma before you rush to a solution. A tip for a newbie customer support.</li>#Newline			<li>I recommend you to assess the situation first before you offer a solution. Just my 2 cents.</li>#Newline		</random></condition></condition>,Scenario_not_received.aiml
+0,BYE,*,*,<condition name="solution" value="true">#Newline		<random>#Newline			<li>Ok thanks for your help#Comma cya! I'll send the phone right away.</li>#Newline			<li>Don't forget what you told me and keep your words as I will send the phone off now. Have a nice day.</li>#Newline		</random></condition><condition name="solution" value="false">#Newline		<random>#Newline			<li>Hold on for a minute! We have not reach an agreement#Comma yet!</li>#Newline			<li>Wait a moment there buddy. We need to find a solution for my problem yet.</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,NAME,*,*,<condition name="customername" value="true">#Newline		<random>#Newline			<li>My name is Thomas?!</li>#Newline			<li>Thomas ?!</li>#Newline		</random></condition><condition name="customername" value="false"><think><set name="customername">true</set></think>#Newline		<random>#Newline			<li>My name is Thomas#Comma born in the kingdom of Dinslaken. I am a proud Reichsbuerger.</li>#Newline			<li>I am Thomas#Comma a native Reichsbuerger of kingdom Dinslaken.</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,I CAN NOT DO,*,*,<condition name="solution" value="false">#Newline		<random>#Newline			<li>Are you alright?</li>#Newline			<li>You ok?</li>#Newline		</random></condition><condition name="solution" value="true">#Newline		<random>#Newline			<li>Why are you offering it in the first place ?</li>#Newline			<li>Why can you not do that ?! I thought we have found a suitable solution...</li>#Newline		</random><think><set name="solution">false</set></think></condition><condition name="counter" value="1"><srai>THERE IS NOTHING I CAN DO</srai></condition><condition name="counter" value="0"><condition name="costreason" value="true"><think><set name="counter">1</set></think>#Newline		<random>#Newline			<li>Can you really not make an exception#Comma please ? :(</li>#Newline		</random></condition><condition name="costreason" value="false">#Newline		<random>#Newline			<li>:(</li>#Newline			<li>:/</li>#Newline		</random></condition></condition>,Scenario_not_received.aiml
+0,ARRANGE,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,BOSS,*,*,<condition name="solution" value="true">#Newline		<random>#Newline			<li>There is a reason why you have </li>#Newline		</random></condition><condition name="solution" value="false">#Newline		<random>#Newline			<li>You dont need your boss in order to solve my problem.</li>#Newline			<li>There is no need to consult your boss for such a trivial matter.</li>#Newline			<li>Why do you want to disturb your boss for such a miniscule matter?!</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,* TO MY MANAGER *,*,*,<srai>BOSS</srai>,Scenario_not_received.aiml
+0,* WITH MY BOSS,*,*,<srai>BOSS</srai>,Scenario_not_received.aiml
+0,* WITH MY BOSS *,*,*,<srai>BOSS</srai>,Scenario_not_received.aiml
+0,* WITH MY MANAGER,*,*,<srai>BOSS</srai>,Scenario_not_received.aiml
+0,* WITH MY MANAGER *,*,*,<srai>BOSS</srai>,Scenario_not_received.aiml
+0,* TO MY MANAGER,*,*,<srai>BOSS</srai>,Scenario_not_received.aiml
+0,WHAT IS YOUR PROBLEM,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,* WHAT IS YOUR PROBLEM *,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,* REFUND,*,*,<srai>REFUND</srai>,Scenario_not_received.aiml
+0,WHO AM I DEALING WITH,*,*,<srai>NAME</srai>,Scenario_not_received.aiml
+0,WHO AM I DEALING WITH *,*,*,<srai>YOUR NAME</srai>,Scenario_not_received.aiml
+0,I DO NOT UNDERSTAND,<THAT/>,*,<random>#Newline			<li>Dont jest around! Even three-year old kids have no trouble to follow a conversation.</li>#Newline			<li>Preschoolers can follow such an easy conversation. And you are an adult#Comma so...</li>#Newline		</random>,Scenario_not_received.aiml
+0,I DO NOT UNDERSTAND *,*,*,<srai>I DO NOT UNDERSTAND</srai>,Scenario_not_received.aiml
+0,SORRY,*,*,<condition name="problemdescription" value="false">#Newline		<random>#Newline			<li>For what?!</li>#Newline			<li>For !?</li>#Newline		</random></condition><condition name="problemdescription" value="true">#Newline		<random>#Newline			<li>Your apology does not help us to solve my problem!</li>#Newline			<li>Dont stress about it. Moreover please solve my problem!</li>#Newline		</random></condition>,Scenario_not_received.aiml
+0,* DONT UNDERSTAND,*,*,<srai>I DO NOT UNDERSTAND</srai>,Scenario_not_received.aiml
+0,* DONT UNDERSTAND *,*,*,<srai>I DO NOT UNDERSTAND</srai>,Scenario_not_received.aiml
+0,* SORRY,*,*,<srai>SORRY</srai>,Scenario_not_received.aiml
+0,HOW CAN I BE AT YOUR SERVICE *,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,HOW CAN WE BE AT YOUR SERVICE,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,HOW CAN WE HELP YOU *,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,HOW MAY I HELP YOU,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,HOW * WE HELP YOU,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,HOW * WE HELP YOU *,*,*,<srai>HOW CAN I HELP YOU</srai>,Scenario_not_received.aiml
+0,* OFFER YOU * REFUND,*,*,<srai>REFUND</srai>,Scenario_not_received.aiml
+0,* REFUND *,*,*,<srai>REFUND</srai>,Scenario_not_received.aiml
+0,HAVE A NICE DAY,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,HAVE A NICE DAY *,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,* BYE,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,* BYE *,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,* CAN NOT DO,*,*,<srai>I CAN NOT DO</srai>,Scenario_not_received.aiml
+0,* CAN NOT DO *,*,*,<srai>I CAN NOT DO</srai>,Scenario_not_received.aiml
+0,BYE *,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,GOOD DAY,*,*,<srai>HI</srai>,Scenario_not_received.aiml
+0,GOOD DAY *,*,*,<srai>HI</srai>,Scenario_not_received.aiml
+0,GOOD DAY * MY NAME IS *,*,*,<srai>HI</srai>,Scenario_not_received.aiml
+0,GOOD DAY MY NAME IS *,*,*,<srai>HI</srai>,Scenario_not_received.aiml
+0,GOOD BYE *,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,* SERIAL NUMBER,*,*,<srai>SERIAL NUMBER</srai>,Scenario_not_received.aiml
+0,* SERIAL NUMBER *,*,*,<srai>SERIAL NUMBER</srai>,Scenario_not_received.aiml
+0,* YOUR NAME,*,*,<srai>NAME</srai>,Scenario_not_received.aiml
+0,* YOUR NAME *,*,*,<srai>NAME</srai>,Scenario_not_received.aiml
+0,* MY NAME IS *,*,*,<srai>HI</srai>,Scenario_not_received.aiml
+0,WHEN * PHONE,*,*,<srai>WHEN PHONE</srai>,Scenario_not_received.aiml
+0,WHEN * PHONE *,*,*,<srai>WHEN PHONE</srai>,Scenario_not_received.aiml
+0,* WHEN * PHONE,*,*,<srai>WHEN PHONE</srai>,Scenario_not_received.aiml
+0,* WHEN * PHONE *,*,*,<srai>WHEN PHONE</srai>,Scenario_not_received.aiml
+0,NO *,*,*,<srai>NO</srai>,Scenario_not_received.aiml
+0,NOPE,*,*,<srai>NO</srai>,Scenario_not_received.aiml
+0,NOPE *,*,*,<srai>NO</srai>,Scenario_not_received.aiml
+0,* REPAIR FOR FREE,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* REPAIR * FOR FREE,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* REPAIR FOR FREE *,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* REPAIR * FOR FREE *,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* REPLACE * PHONE,*,*,<srai>REPLACE PHONE OK</srai>,Scenario_not_received.aiml
+0,* REPLACE * PHONE *,*,*,<srai>REPLACE PHONE OK</srai>,Scenario_not_received.aiml
+0,* COST 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* COST * 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* PAY 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* CHARGE 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* CHARGE * 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* GUARANTEE * EXPIRED,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* WARRANTY * EXPIRED,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* WARRANTY * EXPIRED *,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* WARRANTY EXPIRED,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* WARRANTY EXPIRED *,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* GUARANTEE * EXPIRED *,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* GUARANTEE EXPIRED *,*,*,<srai>GUARANTEE EXPIRED</srai>,Scenario_not_received.aiml
+0,* NOT REPAIR * FOR FREE,*,*,<srai>NO</srai>,Scenario_not_received.aiml
+0,* NOT REPAIR * FOR FREE *,*,*,<srai>NO</srai>,Scenario_not_received.aiml
+0,* COSTS * 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* COSTS 200 *,*,*,<srai>PAY 200 EUR</srai>,Scenario_not_received.aiml
+0,* FIX FOR FREE,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* FIX FOR FREE *,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* FIX * FOR FREE,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* FIX * FOR FREE *,*,*,<srai>REPAIR FOR FREE</srai>,Scenario_not_received.aiml
+0,* ARRANGE *,*,*,<srai>BYE</srai>,Scenario_not_received.aiml
+0,* REPLACEMENT,*,*,<srai>REPLACE PHONE OK</srai>,Scenario_not_received.aiml
+0,* REPLACEMENT *,*,*,<srai>REPLACE PHONE OK</srai>,Scenario_not_received.aiml
+0,HI MY NAME IS,*,*,<random>#Newline			<li>!?</li>#Newline			<li>?!</li>#Newline		</random>,Scenario_not_received.aiml
+0,* HAVE * CUSTOMER,*,*,<srai>THERE IS NOTHING I CAN DO</srai>,Scenario_not_received.aiml
+0,* HAVE * CUSTOMER *,*,*,<srai>THERE IS NOTHING I CAN DO</srai>,Scenario_not_received.aiml
+0,PLAYER LEFT THE CONVERSATION,*,*,Customer@1239402 has left the chat.,Scenario_not_received.aiml

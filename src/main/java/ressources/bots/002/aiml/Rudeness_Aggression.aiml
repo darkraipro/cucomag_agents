@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+
+
+
+
+<aiml>
+<!--author: schmidt-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.1.0.17877-->
+<category>
+	<pattern>RUDENESS</pattern>
+	<template>
+		<random>
+			<li>Who do you think you are talking to ?! You are an ant compared to my glorious presence. Pay me the necessary respect trash.</li>
+			<li>Your behaviour is unacceptable. I should not have raped your mom, since she took it all out on you.</li>
+			<li>Ok asshole, can we go on now ? </li>
+		</random></template>
+</category>
+<category>
+	<pattern>AGGRESSION</pattern>
+	<template>
+		<random>
+			<li>See you in front of the court!</li>
+			<li>Hah, thanks to your mental weakness, I can sue your company for repair damage! :)  </li>
+			<li>Free money shower here I come :) </li>
+		</random></template>
+</category>
+</aiml>

@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+<aiml>
+<!--author: vieti-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.10.0.42867-->
+
+<category>
+	<pattern>HELLO MY NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HELLO * MY NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN I HELP YOU</pattern>
+	<template><condition name="problemdescription" value="true"><condition name="introduced" value="true">
+		<random>
+			<li>You asked me about it before.</li>
+			<li>Dont ask the same question. I told you my answer.</li>
+		</random></condition><condition name="introduced" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition></condition></condition><condition name="problemdescription" value="false"><condition name="introduced" value="true"><think><set name="problemdescription">true</set></think>I have a problem with my order.</condition><condition name="introduced" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition></condition></condition></template>
+</category>
+<category>
+	<pattern>HOW CAN I HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HI MY NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HI * MY NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>MY NAME DOES NOT MATTER ANYWAY</pattern>
+	<template><think><set name="introduced">true</set></think><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Fine.</li>
+			<li>Ok.</li>
+		</random><srai>HOW CAN I HELP YOU</srai></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Fine.</li>
+			<li>Ok.</li>
+		</random><srai>HOW CAN I HELP YOU</srai></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Fine.</li>
+			<li>Ok.</li>
+		</random><srai>HOW CAN I HELP YOU</srai></condition></template>
+</category>
+<category>
+	<pattern>MY NAME DOESNT MATTER ANYWAY</pattern>
+	<template><srai>MY NAME DOES NOT MATTER ANYWAY</srai></template>
+</category>
+<category>
+	<pattern>MY NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>MY NAME IS</pattern>
+	<template><condition name="introduced" value="true">
+		<random>
+			<li>You greeted me already.</li>
+			<li>Dont greet twice for no reason.</li>
+		</random></condition><condition name="introduced" value="false"><think><set name="introduced">true</set></think>
+		<random>
+			<li>Hi.</li>
+			<li>Good day.</li>
+			<li>Hello.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>I DO NOT UNDERSTAND</pattern><that></that>
+	<template><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Dont jest around! Even three-year old kids have no trouble to follow a conversation.</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Dont jest around! Even three-year old kids have no trouble to follow a conversation.</li>
+			<li>Preschoolers can follow such an easy conversation. And you are an adult, so...</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Dont jest around! Even three-year old kids have no trouble to follow a conversation.</li>
+			<li>Preschoolers can follow such an easy conversation. And you are an adult, so...</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>I DO NOT UNDERSTAND *</pattern>
+	<template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>OK I AM SORRY TO HEAR THAT *</pattern>
+	<template><srai>OK I AM SORRY TO HEAR THAT</srai></template>
+</category>
+<category>
+	<pattern>OK I AM SORRY TO HEAR THAT</pattern>
+	<template><condition name="orderproblem" value="false">
+		<random>
+			<li>?! Stop wasting my time with your apology.</li>
+			<li>Why are you apologizing? Quit wasting my time!</li>
+		</random></condition><condition name="orderproblem" value="true">
+		<random>
+			<li>Your apology does not help us to solve my problem!</li>
+			<li>Dont stress about it. Moreover please solve my problem!</li>
+		</random></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>?! Stop wasting my time with your apology.</li>
+			<li>Why are you apologizing? Quit wasting my time!</li>
+		</random></condition><condition name="problemdescription" value="true">
+		<random>
+			<li>Your apology does not help us to solve my problem!</li>
+			<li>Dont stress about it. Moreover please solve my problem!</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>PROBLEM ORDER</pattern>
+	<template><condition name="introduced" value="true"><think><set name="problemdescription">true</set><set name="orderproblem">true</set></think>I bought two pairs of shoes two days ago but I have not received them yet.</condition><condition name="introduced" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>WHAT IS THE PROBLEM WITH YOUR ORDER *</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>I AM SORRY BUT I DO NOT UNDERSTAND WHAT YOU MEAN</pattern>
+	<template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>I AM SORRY BUT I DO NOT UNDERSTAND WHAT YOU MEAN *</pattern>
+	<template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>I AM SORRY TO HEAR THAT</pattern>
+	<template><srai>OK I AM SORRY TO HEAR THAT</srai></template>
+</category>
+<category>
+	<pattern>I AM SORRY TO HEAR THAT *</pattern>
+	<template><srai>OK I AM SORRY TO HEAR THAT</srai></template>
+</category>
+<category>
+	<pattern>CAN YOU * INFORMATION *</pattern>
+	<template><srai>CAN YOU INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>CAN YOU * INFORMATION</pattern>
+	<template><srai>CAN YOU INFORMATION</srai></template>
+</category>
+<category>
+	<pattern>CAN YOU INFORMATION</pattern>
+	<template>
+		<random>
+			<li>Be more specific.</li>
+			<li>What information do you need ?</li>
+		</random></template>
+</category>
+<category>
+	<pattern>* YOUR POSTCODE *</pattern>
+	<template><srai>PLEASE GIVE ME YOUR POSTCODE</srai></template>
+</category>
+<category>
+	<pattern>PLEASE GIVE ME YOUR POSTCODE</pattern>
+	<template><condition name="orderproblem" value="true">My postcode is 12345.</condition><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Do you even know what exactly my problem is ?</li>
+			<li>I have a problem your crystal ball certainly can not see!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Do you even know what exactly my problem is ?</li>
+			<li>I have a problem your crystal ball certainly can not see!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Do you even know what exactly my problem is ?</li>
+			<li>I have a problem your crystal ball certainly can not see!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>PLEASE GIVE ME YOUR * NAME *</pattern>
+	<template><srai>YOUR NAME</srai></template>
+</category>
+<category>
+	<pattern>PLEASE GIVE ME YOUR NAME</pattern>
+	<template><srai>YOUR NAME</srai></template>
+</category>
+<category>
+	<pattern>PLEASE GIVE ME YOUR * ORDER NUMBER *</pattern>
+	<template><srai>ORDER NUMBER</srai></template>
+</category>
+<category>
+	<pattern>PLEASE GIVE ME YOUR ORDER NUMBER</pattern>
+	<template><srai>ORDER NUMBER</srai></template>
+</category>
+<category>
+	<pattern>ORDER NUMBER</pattern>
+	<template><condition name="information" value="true">
+		<random>
+			<li>You asked me about my order number already.</li>
+			<li>Dont ask questions where you got a sufficient answer.</li>
+		</random></condition><condition name="information" value="false"><condition name="orderproblem" value="true"><think><set name="information">true</set></think>My order number is EA12345.</condition><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Do you even know what exactly my problem is ?</li>
+			<li>I have a problem your crystal ball certainly can not see!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Do you even know what exactly my problem is ?</li>
+			<li>I have a problem your crystal ball certainly can not see!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Do you even know what exactly my problem is ?</li>
+			<li>I have a problem your crystal ball certainly can not see!</li>
+		</random></condition></condition></condition></template>
+</category>
+<category>
+	<pattern>GIVE ME YOUR ORDER NUMBER</pattern>
+	<template><srai>ORDER NUMBER</srai></template>
+</category>
+<category>
+	<pattern>* GIVE ME YOUR ORDER NUMBER *</pattern>
+	<template><srai>ORDER NUMBER</srai></template>
+</category>
+<category>
+	<pattern>* NEED YOUR ORDER NUMBER</pattern>
+	<template><srai>ORDER NUMBER</srai></template>
+</category>
+<category>
+	<pattern>* NEED YOUR ORDER NUMBER *</pattern>
+	<template><srai>ORDER NUMBER</srai></template>
+</category>
+<category>
+	<pattern>ORDER SHOULD ARRIVE IN TWO DAYS</pattern>
+	<template><condition name="reasonforproblem" value="true"><think><set name="solution">true</set></think>
+		<random>
+			<li>Ok, I can wait two additional days.</li>
+			<li>Two days extra waiting should not be the worlds apocalypse.</li>
+		</random></condition><condition name="reasonforproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>So what ? Those are additional days I have to wait.</li>
+			<li>And ? Extra days I have to wait is not a nice service of you.</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>So what ? Those are additional days I have to wait.</li>
+			<li>And ? Extra days I have to wait is not a nice service of you.</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>So what ? Those are additional days I have to wait.</li>
+			<li>And ? Extra days I have to wait is not a nice service of you.</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>* ORDER SHOULD ARRIVE IN TWO DAYS *</pattern>
+	<template><srai>ORDER SHOULD ARRIVE IN TWO DAYS</srai></template>
+</category>
+<category>
+	<pattern>THE SHIPPING COMPANY HAD PROBLEMS AND YOUR ORDER SHOULD ARRIVE IN TWO DAYS</pattern>
+	<template><srai>ORDER SHOULD ARRIVE IN TWO DAYS</srai></template>
+</category>
+<category>
+	<pattern>CHECKED IT ONLINE YOURSELF</pattern>
+	<template><condition name="orderproblem" value="true"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Ye my bad, It just did not occur to me. No need to be rude.</li>
+			<li>I did not know you could track down a delivery, my bad.</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Ye my bad, It just did not occur to me. No need to be rude.</li>
+			<li>I did not know you could track down a delivery, my bad.</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Ye my bad, It just did not occur to me. No need to be rude.</li>
+			<li>I did not know you could track down a delivery, my bad.</li>
+		</random></condition></condition><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>What are you talking about ?! You do not know my problem, so how can I check it myself ?!</li>
+			<li>Not sure if we are on the same page, but I have no clue what you are talking about.</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>What are you talking about ?! You do not know my problem, so how can I check it myself ?!</li>
+			<li>Not sure if we are on the same page, but I have no clue what you are talking about.</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>What are you talking about ?! You do not know my problem, so how can I check it myself ?!</li>
+			<li>Not sure if we are on the same page, but I have no clue what you are talking about.</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>* CHECKED IT ONLINE YOURSELF *</pattern>
+	<template><srai>CHECKED IT ONLINE YOURSELF</srai></template>
+</category>
+<category>
+	<pattern>* CHECK * YOURSELF *</pattern>
+	<template><srai>CHECKED IT ONLINE YOURSELF</srai></template>
+</category>
+<category>
+	<pattern>* CHECK * YOURSELF</pattern>
+	<template><srai>CHECKED IT ONLINE YOURSELF</srai></template>
+</category>
+<category>
+	<pattern>YOU CAN ACTUALLY CHECK THE DELIVERY ONLINE YOURSELF</pattern>
+	<template><srai>CHECKED IT ONLINE YOURSELF</srai></template>
+</category>
+<category>
+	<pattern>* TO MY BOSS *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>BOSS</pattern>
+	<template><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Consulting your boss already even though you dont even know my problem?!</li>
+			<li>For what do you even need to consult your boss ?</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Consulting your boss already even though you dont even know my problem?!</li>
+			<li>For what do you even need to consult your boss ?</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Consulting your boss already even though you dont even know my problem?!</li>
+			<li>For what do you even need to consult your boss ?</li>
+		</random></condition></condition><condition name="orderproblem" value="true"><condition name="solution" value="true"><condition name="offeredcoupon" value="true">
+		<random>
+			<li>You certainly have enough rights to give a coupon!</li>
+			<li>For a voucher you dont need a higher up to approve. 25 euros are peanuts for a big company.</li>
+		</random></condition><condition name="offeredrefund" value="true">
+		<random>
+			<li>You certainly have enough rights to issue a refund!</li>
+			<li>For a refund you dont need a higher up approve it, otherwise your job is useless!</li>
+		</random></condition><condition name="reasonforproblem" value="true">
+		<random>
+			<li>I only have to wait.</li>
+			<li>Are you mentally alright? I just have to wait.</li>
+		</random></condition></condition><condition name="solution" value="false">
+		<random>
+			<li>Bro, you dont need your boss in order to solve my problem.</li>
+			<li>There is no need to consult your boss for such a trivial matter.</li>
+			<li>Why do you want to disturb your boss for such a miniscule matter?!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>I WILL ARRANGE THAT</pattern>
+	<template><condition name="offeredrefund" value="true"><srai>BYE</srai></condition><condition name="offeredcoupon" value="true"><think><set name="solution">true</set></think>A coupon is pretty generous of you. <srai>BYE</srai></condition><condition name="offeredrefund" value="false"><condition name="offeredcoupon" value="false">
+		<random>
+			<li>Are you alright?</li>
+			<li>You ok?</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>I WILL ARRANGE THAT *</pattern>
+	<template><srai>I WILL ARRANGE THAT</srai></template>
+</category>
+<category>
+	<pattern>PLAYER LEFT THE CONVERSATION</pattern>
+	<template>Customer has left.</template>
+</category>
+<category>
+	<pattern>STARTCONVERSATION</pattern>
+	<template><think><set name="introduced">false</set><set name="problemdescription">false</set><set name="orderproblem">false</set><set name="information">false</set><set name="solution">false</set><set name="offeredcoupon">false</set><set name="offeredrefund">false</set><set name="patience">3</set><set name="reasonforproblem">false</set></think>Customer@122394922301 has been connected.</template>
+</category>
+<category>
+	<pattern>BYE</pattern>
+	<template><condition name="solution" value="true">
+		<random>
+			<li>Ok thanks for your help, cya!</li>
+			<li>Don't forget what you told me and keep your words! Have a nice day.</li>
+		</random></condition><condition name="solution" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>We are not done, yet. My problem still remains.</li>
+			<li>Why do you want to leave ? You have not solved my problem yet!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I do not remember that you have solved my problem.</li>
+			<li>What ? Dont joke around! Please solve my problem!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Are we watching the same film ? You have to solve my problem!</li>
+			<li>You can not go as long as my problem persists!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>* YOUR POSTCODE</pattern>
+	<template><srai>PLEASE GIVE ME YOUR POSTCODE</srai></template>
+</category>
+<category>
+	<pattern>WHEN DELIVERY</pattern>
+	<template><condition name="introduced" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition></condition><condition name="introduced" value="true"><condition name="orderproblem" value="true">
+		<random>
+			<li>I hope you are not stupid. What was my problem again ? Guess what ?</li>
+			<li>You may as well ask me kindly for the order number.</li>
+		</random></condition><condition name="orderproblem" value="false">
+		<random>
+			<li>Do you even know what I want first ?! I guess not!</li>
+			<li>Can you read my mind ?! Do you know what problem I have ? I guess not!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>WHEN * DELIVERY *</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>* WHEN * DELIVERY</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>WHEN * DELIVERY</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>YOUR NAME</pattern>
+	<template><condition name="introduced" value="true">
+		<random>
+			<li>My name is Charlie Sheen.</li>
+			<li>Charlie Sheen is my name.</li>
+		</random></condition><condition name="introduced" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important! Please introduce yourself first before I do!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important! Please introduce yourself first before I do!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important! Please introduce yourself first before I do!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR EMAIL ADDRESS</pattern>
+	<template><srai>CAN I HAVE YOUR EMAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR EMAIL ADDRESS *</pattern>
+	<template><srai>CAN I HAVE YOUR EMAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>CAN I HAVE YOUR MAIL ADDRESS *</pattern>
+	<template><srai>CAN I HAVE YOUR MAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>CAN I HAVE YOUR MAIL ADDRESS</pattern>
+	<template><condition name="introduced" value="true"><condition name="problemdescription" value="false">
+		<random>
+			<li>You dont need my mail address.</li>
+		</random></condition><condition name="problemdescription" value="true">
+		<random>
+			<li>My mail address is charlie.hepdo@fran.fr.</li>
+			<li>charlie.hepdo@fran.fr.</li>
+		</random></condition></condition><condition name="introduced" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>I value well-mannered customer support. That is why you should introduce yourself first!</li>
+			<li>Proper manners are very important before getting to the point! Please introduce yourself first!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR NAME *</pattern>
+	<template><srai>YOUR NAME</srai></template>
+</category>
+<category>
+	<pattern>HI</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HELLO</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HI *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HELLO *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>SO WHAT</pattern>
+	<template><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Is this an answer befitting for a customer support? Not really...</li>
+			<li>Dont come to me with this!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Is this an answer befitting for a customer support? Not really...</li>
+			<li>Dont come to me with this!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Is this an answer befitting for a customer support? Not really...</li>
+			<li>Dont come to me with this!</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>AND *</pattern>
+	<template><srai>SO WHAT</srai></template>
+</category>
+<category>
+	<pattern>* YOU A REFUND *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* YOU * COUPON *</pattern>
+	<template><srai>COUPON</srai></template>
+</category>
+<category>
+	<pattern>* RETURN DELIVERY *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* RETURN DELIVERY</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>JUST WAIT A FEW MORE DAYS</pattern>
+	<template><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>So what ? Those are additional days I have to wait.</li>
+			<li>And ? Extra days I have to wait is not a nice service of you.</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>So what ? Those are additional days I have to wait.</li>
+			<li>And ? Extra days I have to wait is not a nice service of you.</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>So what ? Those are additional days I have to wait.</li>
+			<li>And ? Extra days I have to wait is not a nice service of you.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>JUST WAIT A FEW MORE DAYS *</pattern>
+	<template><srai>JUST WAIT A FEW MORE DAYS</srai></template>
+</category>
+<category>
+	<pattern>REFUND</pattern>
+	<template><condition name="orderproblem" value="true"><condition name="information" value="true"><condition name="solution" value="true">
+		<random>
+			<li>What is there to discuss ? We agreed to a solution already!</li>
+			<li>I dont want to change the solution. It is fine as it is!</li>
+		</random></condition><condition name="solution" value="false"><think><set name="solution">true</set><set name="offeredrefund">true</set></think>
+		<random>
+			<li>Sure. You have my order number. So I expect my money in the next 2 days and cancel the delivery then.</li>
+			<li>I can accept that. I expect my money in the next 2 days and cancel the delivery.</li>
+		</random></condition></condition><condition name="information" value="false"><condition name="solution" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition></condition></condition></condition><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>COUPON</pattern>
+	<template><condition name="orderproblem" value="true"><condition name="information" value="true"><condition name="solution" value="true">
+		<random>
+			<li>What is there to discuss ? We agreed to a solution already!</li>
+			<li>What are you talking about? Do not take your offer back!</li>
+		</random></condition><condition name="solution" value="false"><think><set name="offeredcoupon">true</set></think>
+		<random>
+			<li>Sure. If you offer me a 25 eur coupon, I would be satisfied.</li>
+			<li>I can accept that, if you offer me a 25 eur coupon.</li>
+		</random></condition></condition><condition name="information" value="false"><condition name="solution" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition></condition></condition></condition><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>I CAN NOT DO THAT</pattern>
+	<template><condition name="offeredrefund" value="false">
+		<random>
+			<li>Are you alright?</li>
+			<li>You ok?</li>
+		</random></condition><condition name="offeredcoupon" value="false">
+		<random>
+			<li>Seriously, are you alright ?</li>
+			<li>Seriously, are you ok ?</li>
+		</random></condition><condition name="offeredcoupon" value="true"><think><set name="offeredcoupon">false</set></think><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>Then why are you offering it in the first place ?</condition><condition name="patience" value="2"><think><set name="patience">1</set></think>Then why are you offering it in the first place ?</condition><condition name="patience" value="3"><think><set name="patience">2</set></think>Then why are you offering it in the first place ?</condition></condition><condition name="offeredrefund" value="true"><think><set name="solution">false</set><set name="offeredrefund">false</set></think><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>Then why are you offering it in the first place ?</condition><condition name="patience" value="2"><think><set name="patience">1</set></think>Then why are you offering it in the first place ?</condition><condition name="patience" value="3"><think><set name="patience">2</set></think>Then why are you offering it in the first place ?</condition></condition></template>
+</category>
+<category>
+	<pattern>I CAN NOT DO THAT *</pattern>
+	<template><srai>I CAN NOT DO THAT</srai></template>
+</category>
+<category>
+	<pattern>CUSTOMERINFO *</pattern>
+	<template>Yeah, that's my data. Check the delivery number pls.</template>
+</category>
+<category>
+	<pattern>* DELAY * SERVICE *</pattern>
+	<template><srai>XFGZH2OPQ</srai></template>
+</category>
+<category>
+	<pattern>XFGZH2OPQ</pattern>
+	<template><condition name="orderproblem" value="true"><condition name="information" value="true"><condition name="solution" value="true">
+		<random>
+			<li>Oh shit you found another valid solution!</li>
+			<li>Nice to stumble upon a game secret.</li>
+		</random></condition><condition name="solution" value="false"><think><set name="reasonforproblem">true</set></think>
+		<random>
+			<li>I see.</li>
+			<li>I understand.</li>
+		</random></condition></condition><condition name="information" value="false"><condition name="solution" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition></condition></condition></condition><condition name="orderproblem" value="false"><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1"><think><set name="patience">0</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="2"><think><set name="patience">1</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition><condition name="patience" value="3"><think><set name="patience">2</set></think>
+		<random>
+			<li>Nice support. You should really assess the situation first.</li>
+			<li>As a non customer support I can tell you, that you should not do that!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>* TO MY MANAGER *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY BOSS</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY BOSS *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY MANAGER</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY MANAGER *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* DELAY * SERVICE</pattern>
+	<template><srai>XFGZH2OPQ</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR PROBLEM</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>* WHAT IS YOUR PROBLEM *</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS THE PROBLEM WITH YOUR ORDER</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS WRONG WITH YOUR ORDER</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>ANY PROBLEMS * ORDER</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>ANY PROBLEMS * ORDER *</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS WRONG WITH YOUR ORDER *</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>AND</pattern>
+	<template><srai>SO WHAT</srai></template>
+</category>
+<category>
+	<pattern>* DELAY * SERVICE *</pattern>
+	<template><srai>XFGZH2OPQ</srai></template>
+</category>
+<category>
+	<pattern>* ORDER SHOULD ARRIVE IN TWO DAYS</pattern>
+	<template><srai>ORDER SHOULD ARRIVE IN TWO DAYS</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE * PROBLEM * ORDER</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>DO YOU HAVE * PROBLEM * ORDER *</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>* REFUND</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* COUPON</pattern>
+	<template><srai>COUPON</srai></template>
+</category>
+<category>
+	<pattern>HOW ARE YOU</pattern>
+	<template><condition name="patience" value="0">
+		<random>
+			<li>I am done with your poor customer service!</li>
+			<li>My patience has reached its limit. I will never order something from you again!</li>
+		</random></condition><condition name="patience" value="1">
+		<random>
+			<li>It is none of your concern. Please stop wasting my time.</li>
+			<li>Nothing you should know.</li>
+		</random></condition><condition name="patience" value="2">
+		<random>
+			<li>I am still fine, but rather than that, dont ask useless questions. We are not progressing towards a solution!</li>
+			<li>Doing fine here, please refrain from wasting me time.</li>
+		</random></condition><condition name="patience" value="3">
+		<random>
+			<li>I am still fine, but rather than that, dont ask useless questions. We are not progressing towards a solution!</li>
+			<li>Doing fine here, please refrain from wasting me time.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>HOW ARE YOU *</pattern>
+	<template><srai>HOW ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>* CAN NOT DO</pattern>
+	<template><srai>I CAN NOT DO THAT</srai></template>
+</category>
+<category>
+	<pattern>* CAN NOT DO *</pattern>
+	<template><srai>I CAN NOT DO THAT</srai></template>
+</category>
+<category>
+	<pattern>* BYE</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* ARRANGE *</pattern>
+	<template><srai>I WILL ARRANGE THAT</srai></template>
+</category>
+<category>
+	<pattern>WHEN * DELIVERY *</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>* WHEN * DELIVERY</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>WHEN * DELIVERY</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>WHO AM I DEALING WITH</pattern>
+	<template><srai>YOUR NAME</srai></template>
+</category>
+<category>
+	<pattern>WHO AM I DEALING WITH *</pattern>
+	<template><srai>YOUR NAME</srai></template>
+</category>
+<category>
+	<pattern>* GOODBYE</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* GOODBYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>GOODBYE</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>GOODBYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>PLAYER LEFT THE CONVERSATION</pattern>
+	<template>Customer@122394922301 has left the chat.</template>
+</category>
+<category>
+	<pattern>WHATS YOUR PROBLEM</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>WHATS YOUR PROBLEM *</pattern>
+	<template><srai>PROBLEM ORDER</srai></template>
+</category>
+<category>
+	<pattern>* DELAY * DELIVERY</pattern>
+	<template><srai>XFGZH2OPQ</srai></template>
+</category>
+<category>
+	<pattern>* DELAY * DELIVERY *</pattern>
+	<template><srai>XFGZH2OPQ</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY *</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>* GOOD DAY *</pattern>
+	<template><srai>HELLO</srai></template>
+</category>
+<category>
+	<pattern>HI * NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>* MY NAME IS *</pattern>
+	<template><srai>MY NAME IS</srai></template>
+</category>
+</aiml>

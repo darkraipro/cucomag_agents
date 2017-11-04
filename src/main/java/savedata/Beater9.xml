@@ -1,0 +1,104 @@
+<Root>
+  <Message>
+    <MessageID>0</MessageID>
+    <PlayerName>Beater</PlayerName>
+    <SentenceOpener>STARTCONVERSATION</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@1239402 has entered the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <PlayerName>Beater</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> No small talk</PlayerInput>
+    <BotResponse>What are you babbling about?!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>10267</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>14</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>3</MessageID>
+    <PlayerName>Beater</PlayerName>
+    <SentenceOpener>How can I help you</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>The glass on the surface of my phone is broken. I need your service to replace them.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>9662</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>14</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>Beater</PlayerName>
+    <SentenceOpener>You have to pay 200 Euro for repair.</SentenceOpener>
+    <PlayerInput> You have to pay 250 Euro for repair</PlayerInput>
+    <BotResponse>Why can you not repair it for free ? Any other competitor would have done so without a blink! I am a life long customer of your company! I bought each product you made and got all generations of your smart phones before, starting with UPhone 1 to UPhone 8 P+!! Now you are telling me that for being such a loyal customer you can not repair the phone for free ??</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>29392</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>8</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>5</MessageID>
+    <PlayerName>Beater</PlayerName>
+    <SentenceOpener>There is nothing I can do.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Fine, I will never buy a product of your company again. Good riddance.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>15997</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>7</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>5</MessageID>
+    <PlayerName>Beater</PlayerName>
+    <SentenceOpener>Player left the conversation.</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@1239402 has left the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>6</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>33</ScoreOverall>
+  </Message>
+  <Result>
+    <PlayerName>Beater</PlayerName>
+    <ResultQuality>6</ResultQuality>
+    <AnswerAmount>5</AnswerAmount>
+    <OverallTime>77318</OverallTime>
+  </Result>
+</Root>

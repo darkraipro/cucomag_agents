@@ -1,0 +1,233 @@
+<Root>
+  <Message>
+    <MessageID>0</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>STARTCONVERSATION</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@122394922301 has been connected.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> Hello,how can I help youß</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>40065</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>13</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>3</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>How can I help you ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I value well-mannered customer support. That is why you should introduce yourself first!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>4345</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> Hello my name is Fabian</PlayerInput>
+    <BotResponse>Hi.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>27657</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>13</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>5</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> May I help you?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>19728</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>12</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>6</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> How can I help you?</PlayerInput>
+    <BotResponse>I have a problem with my order.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>16842</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>11</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>7</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> I am sorry about that</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>18698</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>9</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>8</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> What kind of problem do you have?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>21628</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>107</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>9</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>What is the problem with your order ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I bought two pairs of shoes two days ago but I have not received them yet.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>13859</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>106</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>10</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>I am sorry to hear that</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Your apology does not help us to solve my problem!
+		Your apology does not help us to solve my problem!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>27025</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>104</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>11</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> Please give me your order number so I can help you</PlayerInput>
+    <BotResponse>My order number is EA12345.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>57761</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>199</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>12</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>Can I offer you a coupon ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Sure. If you offer me a 25 eur coupon, I would be satisfied.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>36926</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>197</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>13</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>I will arrange that immediately.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>A coupon is pretty generous of you. Ok thanks for your help, cya!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>10204</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>196</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>13</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>Player left the conversation.</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@122394922301 has left the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>6</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>222</ScoreOverall>
+  </Message>
+  <Result>
+    <PlayerName>Fabian</PlayerName>
+    <ResultQuality>6</ResultQuality>
+    <AnswerAmount>13</AnswerAmount>
+    <OverallTime>322738</OverallTime>
+  </Result>
+</Root>

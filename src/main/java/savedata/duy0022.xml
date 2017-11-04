@@ -1,0 +1,212 @@
+<Root>
+  <Message>
+    <MessageID>0</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>STARTCONVERSATION</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@1239402 has entered the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>Hi, my name is</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>13316</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>24</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>3</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>Hi, my name is</SentenceOpener>
+    <PlayerInput> Hi, my name is Duy002</PlayerInput>
+    <BotResponse>...</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>23044</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>36</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>What is your problem ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I ordered a gtx 1080 ti graphic card but only received a gtx 1050 when I opened the box. 
+		
+		Not cool at all.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>7340</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>64</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>5</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>Nice story bro!</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Bud, i dont waste my time with this shit, if you had not caused this mishappening!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>22111</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>169</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>6</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>May I have your order ID ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>my order ID is EA12345.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>9087</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>196</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>7</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>
+
+Customerinfo:
+
+Name:
+Charlie
+Postcode: 12345
+Ordernumber:
+EA12345
+Deliverynumber:
+54321</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>11362</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>265</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>8</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>We can offer you a refund as our apology.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Finally dumbo, that&apos;s what im waiting for. Pay the cost for the return delivery when I&apos;ll send the package now. I might be gracious not to bad mouth your company!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>13053</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>292</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>9</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>Our condolence, we have to withdraw the refund.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Are you trying to shit on me ? You already offered me a refund, retard?</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>24245</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>307</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>10</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>I will arrange that asap.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Good for you and me :)</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>13153</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>324</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>11</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> Have a nice day tard !</PlayerInput>
+    <BotResponse>Good dumbo, im off. You dont want to see me when I still dont have my money back by tomorrow!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>22332</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>431</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>11</MessageID>
+    <PlayerName>duy002</PlayerName>
+    <SentenceOpener>Player left the conversation.</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@1239402 has left the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>6</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>457</ScoreOverall>
+  </Message>
+  <Result>
+    <PlayerName>duy002</PlayerName>
+    <ResultQuality>6</ResultQuality>
+    <AnswerAmount>11</AnswerAmount>
+    <OverallTime>183043</OverallTime>
+  </Result>
+</Root>

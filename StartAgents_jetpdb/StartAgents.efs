@@ -1,0 +1,18 @@
+1
+"."
+9
+  DIR "lib" "lib" HIDDEN
+  1
+    DIR "program-ab-0.0.4.3" "lib\program-ab-0.0.4.3" HIDDEN
+    1
+      DIR "lib" "lib\program-ab-0.0.4.3\lib" HIDDEN
+      1
+        FILE "Ab.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\Ab__0.jar" HIDDEN
+  FILE "sqlspaces-commons-4.0.0-beta3.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\sqlspaces-commons-4.0.0-beta3__2.jar" HIDDEN
+  FILE "wstx-lgpl-3.2.9.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\wstx-lgpl-3.2.9__4.jar" HIDDEN
+  FILE "xpp3_min-1.1.4c.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\xpp3_min-1.1.4c__8.jar" HIDDEN
+  FILE "xstream-1.4.10.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\xstream-1.4.10__6.jar" HIDDEN
+  FILE "xmlpull-1.1.3.1.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\xmlpull-1.1.3.1__7.jar" HIDDEN
+  FILE "jackson-core-lgpl-1.6.2.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\jackson-core-lgpl-1.6.2__5.jar" HIDDEN
+  FILE "sqlspaces-client-4.0.0-beta3.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\sqlspaces-client-4.0.0-beta3__1.jar" HIDDEN
+  FILE "stax-api-1.0.1.jar" "C:\Users\vieti\workspace\cucomagAgents\StartAgents_jetpdb\tmpres\stax-api-1.0.1__3.jar" HIDDEN

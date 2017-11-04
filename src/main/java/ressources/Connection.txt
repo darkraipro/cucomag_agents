@@ -1,0 +1,3 @@
+﻿Host: localhost
+Port: 2525
+SpaceName: COLCOMA

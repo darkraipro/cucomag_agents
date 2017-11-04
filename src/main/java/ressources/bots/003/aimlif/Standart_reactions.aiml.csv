@@ -1,0 +1,5 @@
+0,*,*,*,<template/>,Standart_reactions.aiml
+0,PINGSILENCE1,*,*,Why are you not answering?,Standart_reactions.aiml
+0,PINGSILENCE2,*,*,You really take a long time to answer.,Standart_reactions.aiml
+0,PINGSILENCE3,*,*,Are you still there?,Standart_reactions.aiml
+0,PINGSILENCE4,*,*,I do not have time for this! I will leave now. You call this customer support?!,Standart_reactions.aiml

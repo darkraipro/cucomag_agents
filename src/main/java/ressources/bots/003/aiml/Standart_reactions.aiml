@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+
+
+
+
+
+
+<aiml>
+<!--author: schmidt-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.1.0.17877-->
+<category>
+	<pattern>*</pattern>
+	<template></template>
+</category>
+<category>
+	<pattern>PINGSILENCE1</pattern>
+	<template>Why are you not answering?</template>
+</category>
+<category>
+	<pattern>PINGSILENCE2</pattern>
+	<template>You really take a long time to answer.</template>
+</category>
+<category>
+	<pattern>PINGSILENCE3</pattern>
+	<template>Are you still there?</template>
+</category>
+<category>
+	<pattern>PINGSILENCE4</pattern>
+	<template>I do not have time for this! I will leave now. You call this customer support?!</template>
+</category>
+</aiml>

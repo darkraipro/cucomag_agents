@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+<!--licence: Standard-->
+<!--author: vieti-->
+<!--note that, in that case he really speaks the truth. by checking the prodID and its history of buyers it is possible that a pre
+decessor swapped the graphic cards and sent it back as retoure.-->
+<!--created with: GaitoBot AIML Editor V2.10.0.42867-->
+<category>
+	<pattern>* A MOMENT</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* A MOMENT *</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* APOLOGIES *</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>* APOLOGIZE</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>* APOLOGIZE *</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>* ARRANGE *</pattern>
+	<template><srai>ARRANGE</srai></template>
+</category>
+<category>
+	<pattern>* CALM DOWN</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>* CALM DOWN *</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>* CHECK YOUR ORDER ID</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* CHECK YOUR ORDER ID *</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* CHILL</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>* CHILL *</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>* DO NOT UNDERSTAND</pattern>
+	<template><srai>DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>* DO NOT UNDERSTAND *</pattern>
+	<template><srai>DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>* DONT UNDERSTAND</pattern>
+	<template><srai>DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>* DONT UNDERSTAND *</pattern>
+	<template><srai>DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>* FUNNY</pattern>
+	<template><srai>FUNNY</srai></template>
+</category>
+<category>
+	<pattern>* FUNNY *</pattern>
+	<template><srai>FUNNY</srai></template>
+</category>
+<category>
+	<pattern>* GOT IT</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* GOT IT *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* GOTCHA *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* HOW * HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>* I GET IT</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* I GET IT *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* IMPATIENT</pattern>
+	<template><srai>IMPATIENT</srai></template>
+</category>
+<category>
+	<pattern>* IMPATIENT *</pattern>
+	<template><srai>IMPATIENT</srai></template>
+</category>
+<category>
+	<pattern>* LIAR *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* LIE</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* LIE *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* LYING</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* LYING *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* MY NAME IS *</pattern>
+	<template><condition name="introduced" value="true"><condition name="username" value="true">
+		<random>
+			<li>Are you brain lagging ? You have greeted me once already!</li>
+			<li>Short-term memory? You introduced yourself already.</li>
+			<li>Are you mentally alright?</li>
+		</random></condition><condition name="username" value="false"><think><set name="introduced">true</set><set name="triggered">false</set><set name="username">true</set></think>...</condition></condition><condition name="introduced" value="false"><think><set name="introduced">true</set><set name="triggered">false</set><set name="username">true</set></think>...</condition></template>
+</category>
+<category>
+	<pattern>* OFFER YOU * COUPON *</pattern>
+	<template><srai>COUPON</srai></template>
+</category>
+<category>
+	<pattern>* OFFER YOU * REFUND *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* OK * GET IT</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* OK * GET IT *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>* ONE MOMENT</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* ONE MOMENT *</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>* RETURN DELIVERY</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* RETURN DELIVERY *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* RUDE</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* RUDE *</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* SALTY</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* SALTY *</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* SCAM *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* SORRY</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>* SORRY *</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>* TO MY BOSS *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* TO MY MANAGER *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* UNFRIENDLY</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* UNFRIENDLY *</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* UNKIND</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* UNKIND *</pattern>
+	<template><srai>IMPOLITE</srai></template>
+</category>
+<category>
+	<pattern>* WHAT IS YOUR PROBLEM *</pattern>
+	<template><srai>WHAT IS YOUR PROBLEM</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY BOSS</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY BOSS *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY MANAGER</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY MANAGER *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* YOU * COUPON *</pattern>
+	<template><srai>COUPON</srai></template>
+</category>
+<category>
+	<pattern>* YOU A REFUND *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* YOUR NAME</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>* YOUR NAME *</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>* YOUR ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>A MOMENT</pattern>
+	<template>
+		<random>
+			<li>You better hurry up!</li>
+			<li>Do it fast!</li>
+		</random></template>
+</category>
+<category>
+	<pattern>APOLOGIES</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>ARRANGE</pattern>
+	<template><condition name="solution" value="true"><condition name="triggered" value="false">
+		<random>
+			<li>Nice man.</li>
+			<li>Great.</li>
+			<li>Thanks.</li>
+		</random></condition><condition name="triggered" value="true">
+		<random>
+			<li>Finally, kiddo. :)</li>
+			<li>Good for you and me :)</li>
+		</random></condition></condition><condition name="solution" value="false">
+		<random>
+			<li>What are you talking about ?</li>
+			<li>Are you mentally stable? What is there to arrange in such a situation?</li>
+			<li>Is your brain working alright? What is there to arrange in such a situation?</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>BOSS</pattern>
+	<template><condition name="problemdescription" value="false"><condition name="triggered" value="true">
+		<random>
+			<li>Ok thats it! Let me speak to your boss now! If you have to depend on your boss, you might as well fuck off and let your boss handle this problem.</li>
+			<li>You are the most useless customer support ever. You better resign or get fired. What did your boss smoke when he hired you ?!</li>
+		</random></condition><condition name="triggered" value="false"><think><set name="triggered">true</set></think>
+		<random>
+			<li>Consulting your boss already even though you dont even know my problem?!</li>
+			<li>For what do you even need to consult your boss ?</li>
+		</random></condition></condition><condition name="problemdescription" value="true"><condition name="solution" value="true"><condition name="offeredrefund" value="true"><think><set name="triggered">true</set></think>
+		<random>
+			<li>You certainly have enough rights to issue a refund!!</li>
+			<li>For a refund you dont need a higher up approve it, otherwise you are useless garbage!!</li>
+		</random></condition><condition name="offeredrefund" value="false"><condition name="triggered" value="true">
+		<random>
+			<li>Even a dumbass like you certainly have enough rights to issue a refund!!</li>
+			<li>For a refund you dont need a higher up approve it, otherwise you are useless garbage!!</li>
+		</random></condition></condition></condition><condition name="solution" value="false"><condition name="triggered" value="true">
+		<random>
+			<li>Useless pile of shit! You should have let me talk to the boss from the beginning then.</li>
+			<li>Ouch, your mom must really regret it not to abort a piece of junk like you :)</li>
+			<li>Are you shitting on me ? This is a simple problem anyone can solve without involving higher ups, maggot!</li>
+		</random></condition><condition name="triggered" value="false"><think><set name="triggered">true</set></think>
+		<random>
+			<li>Bro, you dont need your boss for such a small fuck up caused by you. Your boss wont be happy either if you annoy with him with those problems.</li>
+			<li>Bud, listen. There is no need to consult your boss for such a trivial matter.</li>
+			<li>Friend, why do you want to disturb your boss for such a miniscule matter?!</li>
+		</random></condition></condition></condition></template>
+</category>
+<category>
+	<pattern>BYE</pattern>
+	<template><condition name="solution" value="true"><condition name="triggered" value="true">
+		<random>
+			<li>i expect my refund tomorrow, or else i'll call my lawyer!</li>
+			<li>Good dumbo, im off. You dont want to see me when I still dont have my money back by tomorrow!</li>
+		</random></condition><condition name="triggered" value="false">
+		<random>
+			<li>K, i expect my refund tomorrow. Bye.</li>
+			<li>Ill check my bank account tomorrow, so you better have transferred me the money! Bye.</li>
+		</random></condition></condition><condition name="solution" value="false">
+		<random>
+			<li>Are you trolling ? I WANT A REFUND FOR THE FAKE GRAPHIC CARD!<think><set name="problemdescription">true</set><set name="hardtriggered">true</set></think></li>
+			<li><think><set name="problemdescription">true</set><set name="hardtriggered">true</set></think>WHAT ?! I WANT MY REFUND FOR THE FAKE GRAPHIC CARD!!!</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>CALM DOWN</pattern>
+	<template><condition name="triggered" value="true">
+		<random>
+			<li>DONT ORDER ME AROUND N! </li>
+			<li>F! u!</li>
+		</random></condition><condition name="triggered" value="false">
+		<random>
+			<li>I am calm as water, buddy.</li>
+			<li>I chill. They call me dalai lama for a reason, buddy.</li>
+			<li>Im chilling my life dude.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>CALM DOWN *</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>CAN * HAVE YOUR ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>CAN I HAVE YOUR MAIL ADDRESS</pattern>
+	<template><condition name="problemdescription" value="true"><think><set name="hardtriggered">true</set></think>Why do you need my mail address ?? You dont need my mail address. <formal>my order id is important here</formal>!! DO I have to teach you how to efficiently ask for information ? </condition><condition name="problemdescription" value="false">
+		<random>
+			<li>You dont need my mail address.</li>
+		</random></condition> </template>
+</category>
+<category>
+	<pattern>CAN I HAVE YOUR MAIL ADDRESS *</pattern>
+	<template><srai>CAN I HAVE YOUR MAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>CAN I HAVE YOUR ORDER ID</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>CAN I HAVE YOUR ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>CAN YOU PROVE THAT</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>CAN YOU PROVE THAT *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* CHECK * ORDER ID</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>* CHECK * ORDER ID *</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>CHILL</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>CHILL *</pattern>
+	<template><srai>CALM DOWN</srai></template>
+</category>
+<category>
+	<pattern>COUPON</pattern>
+	<template><condition name="problemdescription" value="true"><condition name="solution" value="true">
+		<random>
+			<li>Dont try to withdraw the refund! I dont need your coupon, since afterwards i will never order anything from you!</li>
+			<li>Dont make me laugh! A refund is and only will be the only possible solution for your fuck ups!</li>
+		</random><think><set name="triggered">true</set></think></condition><condition name="solution" value="false">
+		<random>
+			<li>As if a coupon can help me solve my problem!! Only a refund is the possible solution, idiot!</li>
+			<li>Don't bother with a coupon, retard! Refund is enough for me here!!</li>
+			<li>Hahaha, I dont want your poor quality service anymore! Just cancel the order and refund me!</li>
+		</random><think><set name="triggered">true</set></think></condition></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Ok retard. You should be fired. Start analyzing the situation first by asking what a fcking problem I have !!</li>
+			<li>You dont even know my situation and reason for being here! And let me tell you, a coupon will certainly not problem!</li>
+		</random><think><set name="triggered">true</set></think></condition></template>
+</category>
+<category>
+	<pattern>CYA</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>CYA *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>DO NOT UNDERSTAND</pattern>
+	<template>
+		<random>
+			<li>What's there not to understand ?!</li>
+			<li>You know what i want.</li>
+		</random><condition name="triggered" value="true">
+		<random>
+			<li> dumbhead!</li>
+			<li> retard!</li>
+			<li> idiot!</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>FUNNY</pattern>
+	<template><srai>HOW ABOUT</srai></template>
+</category>
+<category>
+	<pattern>FUNNY *</pattern>
+	<template><srai>FUNNY</srai></template>
+</category>
+<category>
+	<pattern>GIVE ME</pattern>
+	<template><condition name="triggered" value="true">
+		<random>
+			<li>Dont fucking order me around!</li>
+			<li>WTF! You should beg me to hand you over the information!</li>
+		</random></condition><condition name="triggered" value="false"><think><set name="triggered">true</set></think>
+		<random>
+			<li>Dont give me commands!</li>
+			<li>Dont try to order me around!</li>
+			<li>Who do you think you are?</li>
+		</random></condition><condition name="hardtriggered" value="true">
+		<random>
+			<li>You asshole!</li>
+			<li>You prick!</li>
+			<li>Scumbag!</li>
+			<li>Dumbshit!</li>
+			<li>Jesus, your mom should have abort you while she could :)</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>GIVE ME *</pattern>
+	<template><srai>GIVE ME</srai></template>
+</category>
+<category>
+	<pattern>GOOD BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY *</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY * MY NAME IS *</pattern>
+	<template><srai>HI MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY MY NAME IS *</pattern>
+	<template><srai>HI MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>GOT IT *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>GOTCHA *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>HAVE A NICE DAY</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>HAVE A NICE DAY *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>HELLO</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>HELLO * MY NAME IS *</pattern>
+	<template><srai>HI MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HI</pattern>
+	<template><condition name="introduced" value="true">
+		<random>
+			<li>Are you brain lagging ? You have greeted me once already!</li>
+			<li>Short-term memory? You introduced yourself already.</li>
+			<li>Are you mentally alright?</li>
+		</random></condition><condition name="introduced" value="false"><think><set name="introduced">true</set><set name="triggered">true</set></think>
+		<random>
+			<li>Hi...</li>
+			<li>Hello...</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>HI * MY NAME IS *</pattern>
+	<template><srai>HI MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HI MY NAME IS</pattern>
+	<template><condition name="introduced" value="true">
+		<random>
+			<li>Are you brain lagging ? You have greeted me once already!</li>
+			<li>Short-term memory? You introduced yourself already.</li>
+			<li>Are you mentally alright?</li>
+		</random></condition><condition name="introduced" value="false"><think><set name="introduced">true</set><set name="triggered">false</set><set name="username">true</set></think>
+		<random>
+			<li>Hi...</li>
+			<li>Hello...</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>HI MY NAME IS *</pattern>
+	<template><srai>HI MY NAME IS</srai></template>
+</category>
+<category>
+	<pattern>HOW * WE HELP YOU</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW * WE HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW ABOUT</pattern>
+	<template>er... fuck you ?!</template>
+</category>
+<category>
+	<pattern>HOW ABOUT YOU *</pattern>
+	<template><srai>HOW ABOUT</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN * HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN I BE AT YOUR SERVICE *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN I HELP YOU</pattern>
+	<template><condition name="problemdescription" value="true"><condition name="triggered" value="true">Are you kidding me ?! I already told you what my damn problem is!<think><set name="hardtriggered">true</set></think></condition></condition><condition name="problemdescription" value="false"><srai>WHAT IS YOUR PROBLEM</srai></condition></template>
+</category>
+<category>
+	<pattern>HOW CAN WE BE AT YOUR SERVICE</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN WE HELP YOU</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN WE HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW MAY I HELP YOU</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>I GET IT</pattern>
+	<template><condition name="triggered" value="false">
+		<random>
+			<li>I do hope so!</li>
+			<li>...</li>
+		</random></condition><condition name="triggered" value="true">
+		<random>
+			<li>Good, you loser.</li>
+			<li>Nice, you trash.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>I GET IT *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>IMPATIENT</pattern>
+	<template>
+		<random>
+			<li>It's your behavior that makes me so impatient!!</li>
+			<li>My time is very valuable...</li>
+		</random></template>
+</category>
+<category>
+	<pattern>IMPATIENT *</pattern>
+	<template><srai>IMPATIENT</srai></template>
+</category>
+<category>
+	<pattern>IMPOLITE</pattern>
+	<template>
+		<random>
+			<li>Ask yourself why I am like this!</li>
+			<li>Use your brain and think why i am like this!!</li>
+			<li>Lmao, after angering me, you dare to talk to me like that?!</li>
+		</random></template>
+</category>
+<category>
+	<pattern>JUST GIVE ME *</pattern>
+	<template><srai>GIVE ME</srai></template>
+</category>
+<category>
+	<pattern>LIAR</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>LIAR *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>LIE</pattern>
+	<template><condition name="problemdescription" value="true"><condition name="triggered" value="true">
+		<random>
+			<li>Ye sure, i made it all up. Trust me I am better off spending my time elsewhere IF NOT FOR THIS GOD DAMN PROBLEM YOU CAUSED ME!</li>
+			<li>Do you think I want to spend my time with a low life like yourself ?!?!?</li>
+			<li>As if I'd want to keep talking to a poop like you. But here i am CUZ OF YOUR DAMN PROBLEM YOU CAUSED ME!</li>
+		</random></condition><condition name="hardtriggered" value="true">
+		<random>
+			<li>Fucking asshole!</li>
+			<li>That's why you are working in customer support! Cuz your mom abadoned you as soon as you got out :)</li>
+			<li>Damn, to think that you are living in this world. I feel bad for your mum. Should have aborted you instantly :))</li>
+			<li>I hope you get brain cancer.</li>
+			<li>Please kill yourself .</li>
+		</random></condition><condition name="triggered" value="false"><think><set name="triggered">true</set></think>
+		<random>
+			<li>Bud, i dont waste my time with this shit, if you had not caused this mishappening!</li>
+			<li>Bruh, i swear, im not playing foul tricks on you!</li>
+			<li>Buddy, i dont do this.</li>
+		</random></condition></condition><condition name="problemdescription" value="false"><condition name="triggered" value="false"><think><set name="triggered">true</set></think>
+		<random>
+			<li>???!!!</li>
+			<li>What are you talking about ?</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR EMAIL ADDRESS</pattern>
+	<template><srai>CAN I HAVE YOUR EMAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR EMAIL ADDRESS *</pattern>
+	<template><srai>CAN I HAVE YOUR EMAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR MAIL ADDRESS _</pattern>
+	<template><srai>CAN I HAVE YOUR MAIL ADDRESS</srai></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR ORDER ID</pattern>
+	<template><condition name="information" value="true"><condition name="solution" value="false">
+		<random>
+			<li>Dont waste my time with those questions!</li>
+			<li>Dont kid around. You got my order number already.</li>
+		</random></condition><condition name="solution" value="true">
+		<random>
+			<li>Dont waste my time with those questions!</li>
+			<li>Dont kid around.</li>
+			<li>You got all the information you needed from me already. Dont ask those stupid questions.</li>
+		</random></condition></condition><condition name="information" value="false"><condition name="problemdescription" value="true">my order ID is EA12345.<think><set name="information">true</set></think></condition><condition name="problemdescription" value="false">Its cool that we are getting to the point pretty fast, but you dont even know what my problem is.</condition></condition></template>
+</category>
+<category>
+	<pattern>MAY I HAVE YOUR ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>MY NAME IS *</pattern>
+	<template><condition name="introduced" value="true"><condition name="username" value="true">
+		<random>
+			<li>Are you brain lagging ? You have greeted me once already!</li>
+			<li>Short-term memory? You introduced yourself already.</li>
+			<li>Are you mentally alright?</li>
+		</random></condition><condition name="username" value="false"><think><set name="introduced">true</set><set name="triggered">false</set><set name="username">true</set></think>...</condition></condition><condition name="introduced" value="false"><think><set name="introduced">true</set><set name="triggered">false</set><set name="username">true</set>...</think></condition></template>
+</category>
+<category>
+	<pattern>NAME</pattern>
+	<template><condition name="customerName" value="true">
+		<random>
+			<li>?! Are you kinda dumb ? My name was and still is Yasuo.</li>
+			<li>Is your brain malfunctioning ? My name is Yasuo.</li>
+			<li>You asked about my name before!! Handsome Yasuo is my name.</li>
+		</random><think><set name="triggered">true</set></think></condition><condition name="customerName" value="false">
+		<random>
+			<li>Yasuo.</li>
+			<li>They call me handsome Yasuo.</li>
+			<li>My name is Yasuo.</li>
+		</random><think><set name="customerName">true</set></think></condition></template>
+</category>
+<category>
+	<pattern>NICE STORY BRO</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>NICE STORY BRO *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>OK</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>OK *</pattern>
+	<template><srai>I GET IT</srai></template>
+</category>
+<category>
+	<pattern>ONE MOMENT</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>PLEASE PROVIDE ME * ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>REFUND</pattern>
+	<template><condition name="problemdescription" value="true"><think><set name="offeredrefund">true</set></think><condition name="information" value="true"><condition name="triggered" value="true"><condition name="solution" value="true">
+		<random>
+			<li>Are you trying to shit on me ? You already offered me a refund, retard?</li>
+			<li>Are you fucking with me ? You offered me a refund moments ago, fucktard!</li>
+			<li>Dont fuck with me. You offered me a refund already!</li>
+		</random></condition><condition name="solution" value="false">
+		<random>
+			<li>Finally dumbo, that's what im waiting for. Pay the cost for the return delivery when I'll send the package now. I might be gracious not to bad mouth your company!</li>
+			<li>Pray that I wont bad mouth your company, after this awful incident. You better pay me my money back as I am about to return this graphic card back.</li>
+		</random><think><set name="solution">true</set></think></condition></condition><condition name="triggered" value="false"><condition name="solution" value="true">
+		<random>
+			<li>What is there to discuss ? We agreed to a refund already!</li>
+			<li>What are you talking about ? We agreed to refund the graphic card!</li>
+		</random></condition><condition name="solution" value="false"><think><set name="solution">true</set></think>
+		<random>
+			<li>Ok, you will pay for the delivery cost. I ll head out now to send the package. Be grateful, that I wont spread bad words about your company when I get my money back!</li>
+			<li>Pay the additional delivery cost you will cause me, then its fine as long as I get my money back. I'll head out now to return the package.</li>
+		</random></condition></condition></condition><condition name="information" value="false"><condition name="triggered" value="false"><condition name="solution" value="true">
+		<random>
+			<li>Kind Sir, you have offered me a refund already.</li>
+			<li>To shake up your short-term memory, you offered me a refund once already.</li>
+		</random></condition><condition name="solution" value="false"><think><set name="solution">true</set><set name="information">true</set></think>
+		<random>
+			<li>Ok, you will pay for the delivery cost. I ll head out now to send the package. Be grateful, that I wont spread bad words about your company when I get my money back! My order id is EA12345, so you know which parcel to expect.</li>
+			<li>Pay the additional delivery cost you will cause me, then its fine as long as I get my money back. I'll head out now to return the package. My order id is EA12345, check the parcel you ll receive in a few days.</li>
+		</random></condition></condition><condition name="triggered" value="true"><condition name="solution" value="true">
+		<random>
+			<li>Are you trying to shit on me ? You already offered me a refund, retard!</li>
+			<li>Are you fucking with me ? You offered me a refund moments ago, fucktard!</li>
+			<li>Dont fuck with me. You offered me a refund already.</li>
+		</random></condition><condition name="solution" value="false">
+		<random>
+			<li>Finally dumbo, that's what im waiting for. Pay the cost for the return delivery when I'll send the package now. I might be gracious not to bad mouth your company! My order id is EA12345.</li>
+			<li>Pray that I wont bad mouth your company, after this awful incident. You better pay me my money back as I am about to return this graphic card back. My order id is EA12345.</li>
+		</random><think><set name="information">true</set><set name="solution">true</set></think></condition></condition></condition></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Nice support. You are god awful, if you directly offer a refund...</li>
+			<li>Refund for what? You dont even know my problem yet, dimwit.</li>
+			<li>Lol you should be fired, if you always offer a refund without analyzing the situation first.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>RETURN DELIVERY</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>SCAM *</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>SORRY</pattern>
+	<template><condition name="problemdescription" value="true">
+		<random>
+			<li>Dont bother with your half hearted apology!</li>
+			<li>Your apology is unneeded here!</li>
+			<li>A sorry will not solve my problem!</li>
+		</random></condition><condition name="problemdescription" value="false"><condition name="introduced" value="false">
+		<random>
+			<li>?! You must be a trash in real life already apologizing when you get an unsatisfied customer on the chat !</li>
+			<li>Apologize for what ? You dont even know what my problem is!</li>
+		</random></condition> <condition name="introduced" value="true">
+		<random>
+			<li>Dont bother with your half hearted apology!</li>
+			<li>Your apology is unneeded here!</li>
+			<li>A sorry will not help my problem!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>STARTCONVERSATION</pattern>
+	<template><think><set name="customerName">false</set><set name="information">false</set><set name="introduced">false</set><set name="triggered">false</set><set name="hardtriggered">false</set><set name="problemdescription">false</set><set name="solution">false</set><set name="offeredrefund">false</set><set name="username">false</set></think>Customer@1239402 has entered the chat.</template>
+</category>
+<category>
+	<pattern>TARGET BOTSTART</pattern>
+	<template>Type Startconversation to begin the chat. And only send one sentence per answer, since AIML will handle them as separate patterns. This might cause unforeseeable side effects.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR PROBLEM</pattern>
+	<template><condition name="problemdescription" value="true">
+		<random>
+			<li>Are you suffering from Alzheimer ? I told you that i got a gtx 1050 instead of a gtx 1080 ti in a 1080 ti package!!</li>
+			<li>You are already familiar with my problem, dimwit!</li>
+		</random> </condition><condition name="problemdescription" value="false"><think><set name="problemdescription">true</set></think><condition name="introduced" value="false"><think><set name="triggered">true</set></think></condition>I ordered a gtx 1080 ti graphic card but only received a gtx 1050 when I opened the box. 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<random>
+			<li>Nice try to scam me.</li>
+			<li>What are you guys smoking ?</li>
+			<li>Not cool at all.</li>
+		</random></condition> </template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR PROBLEM *</pattern>
+	<template><srai>WHAT IS YOUR PROBLEM</srai></template>
+</category>
+<category>
+	<pattern>* OFFER YOU * REFUND</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>WHEN * DELIVERY *</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>WHEN DELIVERY</pattern>
+	<template><condition name="triggered" value="false"><condition name="problemdescription" value="true">
+		<random>
+			<li>The date of my delivery is not important at all. You can easily check it for yourself if you kindly ask me for the order id.</li>
+			<li>You may as well ask me kindly for the order id. This way, you can easily check it yourself!</li>
+		</random></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Do you even know what I want first ?! I guess not!</li>
+			<li>Can you read my mind ?! Do you know what problem I have ? I guess not!</li>
+		</random></condition><condition value="true" name="problemdescription">
+		<random>
+			<li>The date of my delivery is not important at all. You can easily check it for yourself if you beg me for the order id, dimwit.</li>
+			<li>You may as well ask me kindly for the order id. This way, you can easily check it yourself! Using your brain is not your strong forte, huh ?</li>
+		</random></condition></condition><condition name="triggered" value="true">
+		<random>
+			<li>This question is of no importance at all! Use your brain a bit more dimwit.</li>
+			<li>The delivery was today. But this is not of importance at all, Sherlock.</li>
+			<li>Ask the right questions, Captain Jackass.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>* WHEN * DELIVERY</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>WHEN * DELIVERY</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>* LIAR</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR ORDER ID</pattern>
+	<template><think><set name="triggered">true</set></think><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>PLAYER LEFT THE CONVERSATION*</pattern>
+	<template>Customer has left.</template>
+</category>
+<category>
+	<pattern>* LIAR</pattern>
+	<template><srai>LIE</srai></template>
+</category>
+<category>
+	<pattern>* WHEN * DELIVERY *</pattern>
+	<template><srai>WHEN DELIVERY</srai></template>
+</category>
+<category>
+	<pattern>* NEED * ORDER ID *</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>* NEED * ORDER ID</pattern>
+	<template><srai>MAY I HAVE YOUR ORDER ID</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR NAME</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>WHO AM I DEALING WITH *</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR NAME *</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>WHO AM I DEALING WITH</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>SORRY *</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>* REFUND *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* REFUND</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>ONE MOMENT</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>ONE MOMENT *</pattern>
+	<template><srai>A MOMENT</srai></template>
+</category>
+<category>
+	<pattern>PLAYER LEFT THE CONVERSATION</pattern>
+	<template>Customer@1239402 has left the chat.</template>
+</category>
+<category>
+	<pattern>CUSTOMERINFO *</pattern>
+	<template>Ye, so what ? Will not help us at all. Offer me a refund!</template>
+</category>
+</aiml>

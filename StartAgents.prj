@@ -1,0 +1,88 @@
+%%Excelsior JET v12.0 project file
+
+-compilewithfixedheap-
+-genstackalloc+
+-genstacktrace-
+-global-
+-gui+
+-ignoreclassduplication+
+-ignorememberabsence+
+-inline+
+-multiapp-
+-pgo+
+-splashgetfrommanifest-
+
+-apptype=Plain
+-classabsence=HANDLE
+-compilerheap=1744830464
+-inlinelimit=100
+-inlinetolimit=1000
+-javacommandline:="C:\Program Files\Java\jdk1.8.0_131\bin\javaw.exe" -Dfile.encoding=UTF-8 -classpath C:\Users\vieti\workspace\cucomagAgents\target\classes;C:\Users\vieti\workspace\cucomagAgents\lib\program-ab-0.0.4.3\lib\Ab.jar;C:\Users\vieti\.m2\repository\info\collide\sqlspaces-client\4.0.0-beta3\sqlspaces-client-4.0.0-beta3.jar;C:\Users\vieti\.m2\repository\info\collide\sqlspaces-commons\4.0.0-beta3\sqlspaces-commons-4.0.0-beta3.jar;C:\Users\vieti\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\vieti\.m2\repository\org\codehaus\woodstox\wstx-lgpl\3.2.9\wstx-lgpl-3.2.9.jar;C:\Users\vieti\.m2\repository\org\codehaus\jackson\jackson-core-lgpl\1.6.2\jackson-core-lgpl-1.6.2.jar;C:\Users\vieti\.m2\repository\com\thoughtworks\xstream\xstream\1.4.10\xstream-1.4.10.jar;C:\Users\vieti\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\vieti\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar StartAllAgents.Main
+-jetcplastpage:=PageTrialRun
+-jetrt=Desktop
+-jetvmprop=-Dfile.encoding:UTF-8 -Djet.gc.heaplimit:0 -Djet.stack.trace
+-jprofile=./StartAgents.jprof
+-main=StartAllAgents/Main
+-outputdir=.
+-outputname=StartAgents
+-saprofmode=NONE
+-stacklimit=900000
+-startupprofile=./StartAgents.startup
+
+
+
+
+!classpathentry ./target/classes
+  -pack=none
+  -protect=all
+  -optimize=all
+!end
+!classpathentry ./lib/program-ab-0.0.4.3/lib/Ab.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/info/collide/sqlspaces-client/4.0.0-beta3/sqlspaces-client-4.0.0-beta3.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/info/collide/sqlspaces-commons/4.0.0-beta3/sqlspaces-commons-4.0.0-beta3.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/org/codehaus/woodstox/wstx-lgpl/3.2.9/wstx-lgpl-3.2.9.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/org/codehaus/jackson/jackson-core-lgpl/1.6.2/jackson-core-lgpl-1.6.2.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+!classpathentry ../../.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+  -pack=noncompiled
+  -protect=nomatter
+  -optimize=all
+!end
+
+!module ../../Downloads/agent.ico
+!module ./StartAgents.usg
+

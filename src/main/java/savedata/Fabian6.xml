@@ -1,0 +1,88 @@
+<Root>
+  <Message>
+    <MessageID>0</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>STARTCONVERSATION</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@1239402 has entered the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>How can I help you</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>My phone has been broken. I need your service to replace them.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>5233</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>17</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>3</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>You have to pay 200 Euro for repair.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Do you know how much money I spent on your products ?! I ordered the latest generation of UPhones 6 months prior those came out. I even took a plane from Hamburg to Duesseldorf in order to buy it on the first day of its release in Oberhausen! And here you are telling me now, that I can not have a repair for free ?!</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>16571</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>There is nothing I can do.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Fine, I will never buy a product of your company again. Good riddance.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>21253</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>13</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>Fabian</PlayerName>
+    <SentenceOpener>Player left the conversation.</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@1239402 has left the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>6</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>39</ScoreOverall>
+  </Message>
+  <Result>
+    <PlayerName>Fabian</PlayerName>
+    <ResultQuality>6</ResultQuality>
+    <AnswerAmount>4</AnswerAmount>
+    <OverallTime>53057</OverallTime>
+  </Result>
+</Root>

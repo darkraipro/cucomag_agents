@@ -1,0 +1,338 @@
+<Root>
+  <Message>
+    <MessageID>0</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>STARTCONVERSATION</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@122394922301 has been connected.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>15</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>2</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> hello</PlayerInput>
+    <BotResponse>Good day.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>20086</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>17</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>3</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> how can i help youo ?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>9771</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>37</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>4</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> how can i help you</PlayerInput>
+    <BotResponse>I have a problem with my order.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>16818</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>46</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>5</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> what is it ?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>7013</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>63</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>6</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> what is the problem ?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>16308</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>73</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>7</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>What is the problem with your order ?</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I bought two pairs of shoes two days ago but I have not received them yet.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>20614</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>87</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>8</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> can i have your order number ?</PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>19785</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>99</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>9</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>Please give me your order number</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>My order number is EA12345.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>6056</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>249</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>10</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>53970</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>248</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>11</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>
+
+Customerinfo :
+
+Name:
+Charlie Sheen
+Postcode: 12345
+Order number:
+EA12345
+Delivery number:
+54321</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Yeah, that&apos;s my data. Check the delivery number pls.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>77988</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>251</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>12</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>Your order should arrive in two days.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>So what ? Those are additional days I have to wait.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>26598</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>261</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>13</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>You can actually check the delivery online yourself.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>I did not know you could track down a delivery, my bad.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>33447</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>271</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>14</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> sorry but you have to wait </PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>19091</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>283</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>15</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> sorry but you have to wait because there was an delay with your order </PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>61733</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>287</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>16</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> I´m sorry but you have to wait because there as a delay with the delivery service</PlayerInput>
+    <BotResponse>I understand.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>61320</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>291</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>17</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener></SentenceOpener>
+    <PlayerInput> have a good day </PlayerInput>
+    <BotResponse>I have no answer for that.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>21415</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>397</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>18</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>Your order should arrive in two days.</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Two days extra waiting should not be the worlds apocalypse.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>11522</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>426</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>19</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>Thanks for contacting us and goodbye!</SentenceOpener>
+    <PlayerInput> </PlayerInput>
+    <BotResponse>Don&apos;t forget what you told me and keep your words! Have a nice day.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>true</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>31286</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>1</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>534</ScoreOverall>
+  </Message>
+  <Message>
+    <MessageID>19</MessageID>
+    <PlayerName>Duy</PlayerName>
+    <SentenceOpener>Player left the conversation.</SentenceOpener>
+    <PlayerInput></PlayerInput>
+    <BotResponse>Customer@122394922301 has left the chat.</BotResponse>
+    <Aggression>false</Aggression>
+    <Politeness>false</Politeness>
+    <Rudeness>false</Rudeness>
+    <NoGoSentence>false</NoGoSentence>
+    <MessageTime>0</MessageTime>
+    <BotDelay>30000</BotDelay>
+    <Answerquality>6</Answerquality>
+    <SilenceTrigger>false</SilenceTrigger>
+    <ScoreOverall>560</ScoreOverall>
+  </Message>
+  <Result>
+    <PlayerName>Duy</PlayerName>
+    <ResultQuality>6</ResultQuality>
+    <AnswerAmount>19</AnswerAmount>
+    <OverallTime>554821</OverallTime>
+  </Result>
+</Root>

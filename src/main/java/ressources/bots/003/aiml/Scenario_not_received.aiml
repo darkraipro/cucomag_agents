@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<aiml>
+<!--author: vieti-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.10.0.42867-->
+<category>
+	<pattern>TARGET BOTSTART</pattern>
+	<template>This is the greeting of a GaitoBot conversation.</template>
+</category>
+<category>
+	<pattern>HI</pattern>
+	<template><condition name="introduced" value="true">
+		<random>
+			<li>?!</li>
+			<li>!?</li>
+		</random></condition><condition name="introduced" value="false"><think><set name="introduced">true</set></think>
+		<random>
+			<li>Hi.</li>
+			<li>Good day.</li>
+			<li>Hello.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>STARTCONVERSATION</pattern>
+	<template><think><set name="introduced">false</set><set name="information">false</set><set name="problemdescription">false</set><set name="solution">false</set><set name="costreason">false</set><set name="serialnumber">false</set><set name="customername">false</set><set name="counter">0</set></think>Customer@1239402 has entered the chat.</template>
+</category>
+<category>
+	<pattern>HOW CAN I HELP YOU</pattern>
+	<template><condition name="problemdescription" value="true">
+		<random>
+			<li>Pretty sure I told you my problem just a moment before, but here again: my phone has been broken. I need your service to replace them.</li>
+			<li>My problem is just as I said: The glass on the surface of my phone is broken. I need your service to replace them</li>
+		</random></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>My phone has been broken. I need your service to replace them.</li>
+			<li>The glass on the surface of my phone is broken. I need your service to replace them.</li>
+		</random><think><set name="problemdescription">true</set></think></condition></template>
+</category>
+<category>
+	<pattern>WHEN PHONE</pattern>
+	<template><condition name="information" value="true">
+		<random>
+			<li>?!</li>
+			<li>!?</li>
+		</random></condition><condition name="information" value="false"><think><set name="information">true</set></think>
+		<random>
+			<li>Roughly 3 years ago I bought the phone at your store.</li>
+			<li>I think I have the phone for 3 years now.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>SERIAL NUMBER</pattern>
+	<template><condition name="serialnumber" value="true">
+		<random>
+			<li>As I said the phones number is 47057.</li>
+			<li>47057</li>
+		</random></condition><condition name="serialnumber" value="false">
+		<random>
+			<li>Let me see... it is 47057.</li>
+			<li>I believe it is 47057... yeah it is.</li>
+		</random><think><set name="serialnumber">true</set></think></condition></template>
+</category>
+<category>
+	<pattern>REFUND</pattern>
+	<template><condition name="problemdescription" value="true">A refund would be nice :)</condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Analyze the situation first, before you rush to a solution. A tip for a newbie customer support.</li>
+			<li>I recommend you to assess the situation first before you offer a solution. Just my 2 cents.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>REPLACE PHONE OK</pattern>
+	<template><condition name="solution" value="true">
+		<random>
+			<li>?!</li>
+			<li>!?</li>
+		</random></condition><condition name="solution" value="false"><condition name="problemdescription" value="true"><think><set name="solution">true</set></think>Ye thats great then. :)</condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Analyze the situation first, before you rush to a solution. A tip for a newbie customer support.</li>
+			<li>I recommend you to assess the situation first before you offer a solution. Just my 2 cents.</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>PAY 200 EUR</pattern>
+	<template><condition name="problemdescription" value="true">
+		<random>
+			<li>Why can you not repair it for free ? Any other competitor would have done so without a blink! I am a life long customer of your company! I bought each product you made and got all generations of your smart phones before, starting with UPhone 1 to UPhone 8 P+!! Now you are telling me that for being such a loyal customer you can not repair the phone for free ??</li>
+			<li>Do you know how much money I spent on your products ?! I ordered the latest generation of UPhones 6 months prior those came out. I even took a plane from Hamburg to Duesseldorf in order to buy it on the first day of its release in Oberhausen! And here you are telling me now, that I can not have a repair for free ?!</li>
+		</random></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Wait that is bad support if you are not aware of my situation first. That is made up out of thin air.</li>
+			<li>What you just said makes no sense considering it came out of nowhere.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>GUARANTEE EXPIRED</pattern>
+	<template><condition name="costreason" value="true">
+		<random>
+			<li>?!</li>
+			<li>!?</li>
+		</random></condition><condition name="costreason" value="false"><think><set name="costreason">true</set></think>You can surely make an exception for a long time customer.</condition></template>
+</category>
+<category>
+	<pattern>NO</pattern>
+	<template><condition name="costreason" value="true"><condition name="counter" value="1"><srai>THERE IS NOTHING I CAN DO</srai></condition><condition name="counter" value="0"><condition name="problemdescription" value="true"><think><set name="counter">1</set></think>
+		<random>
+			<li>Can you really not make an exception, please ? :(</li>
+		</random></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>What are you babbling about?!</li>
+		</random></condition></condition></condition><condition name="costreason" value="false"><condition name="problemdescription" value="false">
+		<random>
+			<li>What are you babbling about?!</li>
+		</random></condition><condition name="problemdescription" value="true">
+		<random>
+			<li>Why not ?!?!</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>THERE IS NOTHING I CAN DO</pattern>
+	<template><condition name="problemdescription" value="true">
+		<random>
+			<li>Fine, I will never buy a product of your company again. Good riddance.</li>
+			<li>Ok today your competitor have a new customer. Cya.</li>
+		</random></condition><condition name="problemdescription" value="false">
+		<random>
+			<li>?!</li>
+			<li>!?</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>REPAIR FOR FREE</pattern>
+	<template><condition name="solution" value="true">
+		<random>
+			<li>?!</li>
+			<li>!?</li>
+		</random></condition><condition name="solution" value="false"><condition name="problemdescription" value="true"><think><set name="solution">true</set></think>Ye thats great then. :)</condition><condition name="problemdescription" value="false">
+		<random>
+			<li>Analyze the situation first, before you rush to a solution. A tip for a newbie customer support.</li>
+			<li>I recommend you to assess the situation first before you offer a solution. Just my 2 cents.</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>BYE</pattern>
+	<template><condition name="solution" value="true">
+		<random>
+			<li>Ok thanks for your help, cya! I'll send the phone right away.</li>
+			<li>Don't forget what you told me and keep your words as I will send the phone off now. Have a nice day.</li>
+		</random></condition><condition name="solution" value="false">
+		<random>
+			<li>Hold on for a minute! We have not reach an agreement, yet!</li>
+			<li>Wait a moment there buddy. We need to find a solution for my problem yet.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>NAME</pattern>
+	<template><condition name="customername" value="true">
+		<random>
+			<li>My name is Thomas?!</li>
+			<li>Thomas ?!</li>
+		</random></condition><condition name="customername" value="false"><think><set name="customername">true</set></think>
+		<random>
+			<li>My name is Thomas, born in the kingdom of Dinslaken. I am a proud Reichsbuerger.</li>
+			<li>I am Thomas, a native Reichsbuerger of kingdom Dinslaken.</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>I CAN NOT DO</pattern>
+	<template><condition name="solution" value="false">
+		<random>
+			<li>Are you alright?</li>
+			<li>You ok?</li>
+		</random></condition><condition name="solution" value="true">
+		<random>
+			<li>Why are you offering it in the first place ?</li>
+			<li>Why can you not do that ?! I thought we have found a suitable solution...</li>
+		</random><think><set name="solution">false</set></think></condition><condition name="counter" value="1"><srai>THERE IS NOTHING I CAN DO</srai></condition><condition name="counter" value="0"><condition name="costreason" value="true"><think><set name="counter">1</set></think>
+		<random>
+			<li>Can you really not make an exception, please ? :(</li>
+		</random></condition><condition name="costreason" value="false">
+		<random>
+			<li>:(</li>
+			<li>:/</li>
+		</random></condition></condition></template>
+</category>
+<category>
+	<pattern>ARRANGE</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>BOSS</pattern>
+	<template><condition name="solution" value="true">
+		<random>
+			<li>There is a reason why you have </li>
+		</random></condition><condition name="solution" value="false">
+		<random>
+			<li>You dont need your boss in order to solve my problem.</li>
+			<li>There is no need to consult your boss for such a trivial matter.</li>
+			<li>Why do you want to disturb your boss for such a miniscule matter?!</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>* TO MY MANAGER *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY BOSS</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY BOSS *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY MANAGER</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* WITH MY MANAGER *</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>* TO MY MANAGER</pattern>
+	<template><srai>BOSS</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR PROBLEM</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>* WHAT IS YOUR PROBLEM *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>* REFUND</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* CAN NOT DO</pattern>
+	<template><srai>I CAN NOT DO</srai></template>
+</category>
+<category>
+	<pattern>* CAN NOT DO *</pattern>
+	<template><srai>I CAN NOT DO</srai></template>
+</category>
+<category>
+	<pattern>WHO AM I DEALING WITH</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>WHO AM I DEALING WITH *</pattern>
+	<template><srai>YOUR NAME</srai></template>
+</category>
+<category>
+	<pattern>I DO NOT UNDERSTAND</pattern><that></that>
+	<template>
+		<random>
+			<li>Dont jest around! Even three-year old kids have no trouble to follow a conversation.</li>
+			<li>Preschoolers can follow such an easy conversation. And you are an adult, so...</li>
+		</random></template>
+</category>
+<category>
+	<pattern>I DO NOT UNDERSTAND *</pattern>
+	<template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>SORRY</pattern>
+	<template><condition name="problemdescription" value="false">
+		<random>
+			<li>For what?!</li>
+			<li>For !?</li>
+		</random></condition><condition name="problemdescription" value="true">
+		<random>
+			<li>Your apology does not help us to solve my problem!</li>
+			<li>Dont stress about it. Moreover please solve my problem!</li>
+		</random></condition></template>
+</category>
+<category>
+	<pattern>* DONT UNDERSTAND</pattern>
+	<template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>* DONT UNDERSTAND *</pattern>
+	<template><srai>I DO NOT UNDERSTAND</srai></template>
+</category>
+<category>
+	<pattern>* SORRY</pattern>
+	<template><srai>SORRY</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN I BE AT YOUR SERVICE *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN WE BE AT YOUR SERVICE</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN WE BE AT YOUR SERVICE</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW CAN WE HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW MAY I HELP YOU</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW * WE HELP YOU</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>HOW * WE HELP YOU *</pattern>
+	<template><srai>HOW CAN I HELP YOU</srai></template>
+</category>
+<category>
+	<pattern>* OFFER YOU * REFUND</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>* REFUND *</pattern>
+	<template><srai>REFUND</srai></template>
+</category>
+<category>
+	<pattern>HAVE A NICE DAY</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>HAVE A NICE DAY *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* BYE</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* CAN NOT DO</pattern>
+	<template><srai>I CAN NOT DO</srai></template>
+</category>
+<category>
+	<pattern>* CAN NOT DO *</pattern>
+	<template><srai>I CAN NOT DO</srai></template>
+</category>
+<category>
+	<pattern>BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY *</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY * MY NAME IS *</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>GOOD DAY MY NAME IS *</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>GOOD BYE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* SERIAL NUMBER</pattern>
+	<template><srai>SERIAL NUMBER</srai></template>
+</category>
+<category>
+	<pattern>* SERIAL NUMBER *</pattern>
+	<template><srai>SERIAL NUMBER</srai></template>
+</category>
+<category>
+	<pattern>* YOUR NAME</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>* YOUR NAME *</pattern>
+	<template><srai>NAME</srai></template>
+</category>
+<category>
+	<pattern>* MY NAME IS *</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>WHEN * PHONE</pattern>
+	<template><srai>WHEN PHONE</srai></template>
+</category>
+<category>
+	<pattern>WHEN * PHONE *</pattern>
+	<template><srai>WHEN PHONE</srai></template>
+</category>
+<category>
+	<pattern>* WHEN * PHONE</pattern>
+	<template><srai>WHEN PHONE</srai></template>
+</category>
+<category>
+	<pattern>* WHEN * PHONE *</pattern>
+	<template><srai>WHEN PHONE</srai></template>
+</category>
+<category>
+	<pattern>NO *</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>NOPE</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>NOPE *</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>* REPAIR FOR FREE</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* REPAIR * FOR FREE</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* REPAIR FOR FREE *</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* REPAIR * FOR FREE *</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* REPLACE * PHONE</pattern>
+	<template><srai>REPLACE PHONE OK</srai></template>
+</category>
+<category>
+	<pattern>* REPLACE * PHONE *</pattern>
+	<template><srai>REPLACE PHONE OK</srai></template>
+</category>
+<category>
+	<pattern>* COST 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* COST * 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* PAY 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* CHARGE 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* CHARGE * 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* GUARANTEE * EXPIRED</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* WARRANTY * EXPIRED</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* WARRANTY * EXPIRED *</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* WARRANTY EXPIRED</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* WARRANTY EXPIRED *</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* GUARANTEE * EXPIRED *</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* GUARANTEE EXPIRED *</pattern>
+	<template><srai>GUARANTEE EXPIRED</srai></template>
+</category>
+<category>
+	<pattern>* NOT REPAIR * FOR FREE</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>* NOT REPAIR * FOR FREE *</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>* COSTS * 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* COSTS 200 *</pattern>
+	<template><srai>PAY 200 EUR</srai></template>
+</category>
+<category>
+	<pattern>* FIX FOR FREE</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* FIX FOR FREE *</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* FIX * FOR FREE</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* FIX * FOR FREE *</pattern>
+	<template><srai>REPAIR FOR FREE</srai></template>
+</category>
+<category>
+	<pattern>* ARRANGE *</pattern>
+	<template><srai>BYE</srai></template>
+</category>
+<category>
+	<pattern>* REPLACEMENT</pattern>
+	<template><srai>REPLACE PHONE OK</srai></template>
+</category>
+<category>
+	<pattern>* REPLACEMENT *</pattern>
+	<template><srai>REPLACE PHONE OK</srai></template>
+</category>
+<category>
+	<pattern>HI MY NAME IS</pattern>
+	<template>
+		<random>
+			<li>!?</li>
+			<li>?!</li>
+		</random></template>
+</category>
+<category>
+	<pattern>* HAVE * CUSTOMER</pattern>
+	<template><srai>THERE IS NOTHING I CAN DO</srai></template>
+</category>
+<category>
+	<pattern>* HAVE * CUSTOMER *</pattern>
+	<template><srai>THERE IS NOTHING I CAN DO</srai></template>
+</category>
+<category>
+	<pattern>PLAYER LEFT THE CONVERSATION</pattern>
+	<template>Customer@1239402 has left the chat.</template>
+</category>
+</aiml>
